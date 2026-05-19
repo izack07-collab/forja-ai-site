@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { href: "#como-funciona", label: "Como funciona" },
+  { href: "#ecossistema", label: "Ecossistema" },
   { href: "#pacotes", label: "Pacotes" },
-  { href: "#case", label: "Case" },
   { href: "#faq", label: "Perguntas" },
 ];
 

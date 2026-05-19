@@ -1,6 +1,7 @@
 import { Nav } from "@/components/sections/Nav";
 import { Hero } from "@/components/sections/Hero";
 import { ComoFunciona } from "@/components/sections/ComoFunciona";
+import { Ecossistema } from "@/components/sections/Ecossistema";
 import { Pacotes } from "@/components/sections/Pacotes";
 import { Case } from "@/components/sections/Case";
 import { FAQ } from "@/components/sections/FAQ";
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <ComoFunciona />
+        <Ecossistema />
         <Pacotes />
         <Case />
         <FAQ />

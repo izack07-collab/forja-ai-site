@@ -30,6 +30,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#ecossistema" className="hover:text-bg transition-colors">
+                  Ecossistema (4 pilares)
+                </a>
+              </li>
+              <li>
                 <a href="#pacotes" className="hover:text-bg transition-colors">
                   Pacotes
                 </a>

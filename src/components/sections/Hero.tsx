@@ -21,28 +21,29 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="flex items-center gap-2 mb-8 animate-fade-in">
             <Sparkles className="h-4 w-4 text-accent-deep" strokeWidth={1.5} />
-            <span className="eyebrow">Loja online sob medida · 7 dias</span>
+            <span className="eyebrow">Vitrine · Agente IA · CRM · Tráfego pago integrado</span>
           </div>
 
           <h1 className="h-display font-medium italic text-balance leading-[1.02] md:text-display-xl animate-fade-up">
-            A loja online que
+            Sua loja vendendo
             <br />
-            <span className="text-accent-deep">você já deveria ter</span>
+            <span className="text-accent-deep">do anúncio ao pós-venda</span>
             <span className="not-italic font-light">,</span>
             <br />
-            no jeito de quem
+            num lugar só, com
             <br />
-            cuida da sua marca.
+            número que você entende.
           </h1>
 
           <p
             className="lead mt-8 text-pretty md:text-xl animate-fade-up"
             style={{ animationDelay: "120ms" }}
           >
-            Vitrine, checkout e vendedor virtual no WhatsApp
-            <span className="font-display italic text-ink"> montados pra você</span>,
-            por quem já fez uma loja inteira do zero. Sem trocar de plataforma,
-            sem te tirar do que importa.
+            Vitrine online, vendedor virtual no WhatsApp, CRM com seu
+            financeiro e atribuição do tráfego pago — <span className="font-display italic text-ink">tudo montado pra você</span>,
+            por quem já fez uma loja inteira do zero. Você vê
+            qual anúncio trouxe a venda, qual peça gira mais e
+            onde investir o próximo real.
           </p>
 
           <div
@@ -56,12 +57,12 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="#pacotes">Ver os pacotes</a>
+              <a href="#ecossistema">Ver o que vem dentro</a>
             </Button>
           </div>
 
           <div
-            className="mt-14 flex items-center gap-6 animate-fade-up"
+            className="mt-14 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 animate-fade-up"
             style={{ animationDelay: "360ms" }}
           >
             <div className="flex items-center gap-2">
@@ -71,8 +72,8 @@ export function Hero() {
               </span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-line" />
-            <span className="hidden sm:inline text-xs text-ink-muted">
-              Pacote Essencial a partir de R$ 3.500
+            <span className="text-xs text-ink-muted">
+              A partir de <span className="text-ink font-medium">R$ 3.000</span> (só vitrine) · escala conforme você adiciona peças
             </span>
           </div>
         </div>
