@@ -1,4 +1,4 @@
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Globe } from "lucide-react";
 
 export function Footer() {
   return (
@@ -54,7 +54,7 @@ export function Footer() {
 
           <div className="md:col-span-4">
             <p className="text-xs uppercase tracking-wider2 text-bg/40 mb-4">
-              Falar
+              Falar com o Isaac
             </p>
             <ul className="space-y-2 text-sm">
               <li>
@@ -68,13 +68,24 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/izack"
+                  href="https://www.linkedin.com/in/isaac-silveira-49b09821a/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 hover:text-bg transition-colors"
                 >
                   <Linkedin className="h-4 w-4" strokeWidth={1.5} />
-                  LinkedIn do Isaac
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://izack07-collab.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-bg transition-colors"
+                >
+                  <Globe className="h-4 w-4" strokeWidth={1.5} />
+                  Portfólio (outros projetos)
                 </a>
               </li>
             </ul>
