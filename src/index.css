@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --header-h: 64px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-h);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1;
+    min-height: 100vh;
+  }
+
+  /* Tipografia editorial pros displays */
+  .font-display {
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  }
+
+  ::selection {
+    @apply bg-accent text-bg-deep;
+  }
+
+  /* Foco acessível mas alinhado com paleta */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  .section-tight {
+    @apply py-14 md:py-20;
+  }
+
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-wider2 text-accent-deep;
+  }
+
+  .h-display {
+    @apply font-display font-light text-display-lg text-ink;
+  }
+
+  .h-section {
+    @apply font-display font-light text-display-md text-ink;
+  }
+
+  .lead {
+    @apply text-lg md:text-xl text-ink-soft leading-relaxed max-w-2xl;
+  }
+
+  .body-prose {
+    @apply text-base text-ink-soft leading-relaxed;
+  }
+
+  .divider-fine {
+    @apply h-px w-full bg-line;
+  }
+
+  .divider-accent {
+    @apply h-px w-12 bg-accent;
+  }
+
+  /* Grão sutil pra textura editorial sem peso */
+  .surface-paper {
+    background-color: #FAFAF8;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(31, 29, 26, 0.025) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  .surface-warm {
+    background-color: #F2EFE8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}

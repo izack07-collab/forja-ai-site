@@ -1,0 +1,82 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
+
+export function Hero() {
+  return (
+    <section
+      id="topo"
+      className="relative pt-32 md:pt-40 pb-20 md:pb-28 surface-paper overflow-hidden"
+    >
+      {/* Acento dourado sutil no canto */}
+      <div
+        aria-hidden
+        className="absolute -top-32 -right-32 w-[480px] h-[480px] rounded-full bg-accent/8 blur-3xl pointer-events-none"
+      />
+      <div
+        aria-hidden
+        className="absolute bottom-0 left-0 w-[320px] h-[320px] rounded-full bg-accent-soft/20 blur-3xl pointer-events-none"
+      />
+
+      <div className="container relative">
+        <div className="max-w-4xl">
+          <div className="flex items-center gap-2 mb-8 animate-fade-in">
+            <Sparkles className="h-4 w-4 text-accent-deep" strokeWidth={1.5} />
+            <span className="eyebrow">Loja online sob medida · 7 dias</span>
+          </div>
+
+          <h1 className="h-display font-medium italic text-balance leading-[1.02] md:text-display-xl animate-fade-up">
+            A loja online que
+            <br />
+            <span className="text-accent-deep">você já deveria ter</span>
+            <span className="not-italic font-light">,</span>
+            <br />
+            no jeito de quem
+            <br />
+            cuida da sua marca.
+          </h1>
+
+          <p
+            className="lead mt-8 text-pretty md:text-xl animate-fade-up"
+            style={{ animationDelay: "120ms" }}
+          >
+            Vitrine, checkout e vendedor virtual no WhatsApp
+            <span className="font-display italic text-ink"> montados pra você</span>,
+            por quem já fez uma loja inteira do zero. Sem trocar de plataforma,
+            sem te tirar do que importa.
+          </p>
+
+          <div
+            className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-up"
+            style={{ animationDelay: "240ms" }}
+          >
+            <Button asChild variant="accent" size="lg">
+              <a href="#contato" className="group">
+                Falar com o Isaac
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <a href="#pacotes">Ver os pacotes</a>
+            </Button>
+          </div>
+
+          <div
+            className="mt-14 flex items-center gap-6 animate-fade-up"
+            style={{ animationDelay: "360ms" }}
+          >
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-success" />
+              <span className="text-xs text-ink-muted">
+                Case Ri Pratas no ar (prata 925, SP)
+              </span>
+            </div>
+            <div className="hidden sm:block w-px h-4 bg-line" />
+            <span className="hidden sm:inline text-xs text-ink-muted">
+              Pacote Essencial a partir de R$ 3.500
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
