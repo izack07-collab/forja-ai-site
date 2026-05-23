@@ -10,7 +10,7 @@ export function Footer() {
               href="#topo"
               className="font-display text-2xl tracking-tightish text-bg hover:text-accent transition-colors inline-block"
             >
-              Forja<span className="text-accent">.AI</span>
+              Forj<span className="text-accent">age</span>
             </a>
             <p className="text-sm mt-4 max-w-md leading-relaxed text-pretty">
               Ecossistema de loja online empacotado pra lojas físicas
@@ -37,6 +37,11 @@ export function Footer() {
               <li>
                 <a href="#pacotes" className="hover:text-bg transition-colors">
                   Pacotes
+                </a>
+              </li>
+              <li>
+                <a href="#comparativo" className="hover:text-bg transition-colors">
+                  vs Shopify / Nuvemshop
                 </a>
               </li>
               <li>
@@ -93,8 +98,8 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-bg/10 flex flex-col md:flex-row justify-between gap-4 text-xs text-bg/40">
-          <p>© 2026 Forja AI · Operação solo do Isaac · CNPJ a definir</p>
-          <p className="font-display italic text-sm">forjaai.com.br</p>
+          <p>© 2026 Forjage · Operação solo do Isaac · CNPJ a definir</p>
+          <p className="font-display italic text-sm">forjage.com.br</p>
         </div>
       </div>
     </footer>

@@ -23,7 +23,7 @@ export function Contato() {
     const corpo = `Oi Isaac,%0A%0AMe chamo ${encodeURIComponent(nome)}, sou da loja ${encodeURIComponent(loja)} (${encodeURIComponent(cidade)}).%0AMeu WhatsApp: ${encodeURIComponent(wpp)}.%0A%0A${encodeURIComponent(conta)}%0A%0AVamos conversar?`;
 
     const mailto = `mailto:izack07@gmail.com?subject=${encodeURIComponent(
-      `Forja AI · ${loja} (${cidade})`,
+      `Forjage · ${loja} (${cidade})`,
     )}&body=${corpo}`;
 
     window.location.href = mailto;
@@ -42,7 +42,7 @@ export function Contato() {
         <div className="grid md:grid-cols-12 gap-12 md:gap-16 items-start">
           <div className="md:col-span-5">
             <p className="text-xs font-medium uppercase tracking-wider2 text-accent mb-4">
-              Falar comigo
+              Falar com a Forjage
             </p>
             <h2 className="font-display font-light italic text-display-md text-bg text-balance">
               Conta da sua loja

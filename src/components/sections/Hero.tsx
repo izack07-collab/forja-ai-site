@@ -21,7 +21,7 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="flex items-center gap-2 mb-8 animate-fade-in">
             <Sparkles className="h-4 w-4 text-accent-deep" strokeWidth={1.5} />
-            <span className="eyebrow">Vitrine · Agente IA · CRM · Tráfego pago integrado</span>
+            <span className="eyebrow">Forjage · Vitrine · Agente IA · CRM · Tráfego pago integrado</span>
           </div>
 
           <h1 className="h-display font-medium italic text-balance leading-[1.02] md:text-display-xl animate-fade-up">
@@ -52,7 +52,7 @@ export function Hero() {
           >
             <Button asChild variant="accent" size="lg">
               <a href="#contato" className="group">
-                Falar com o Isaac
+                Falar com a Forjage
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </Button>

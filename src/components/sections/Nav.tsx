@@ -6,6 +6,7 @@ const links = [
   { href: "#como-funciona", label: "Como funciona" },
   { href: "#ecossistema", label: "Ecossistema" },
   { href: "#pacotes", label: "Pacotes" },
+  { href: "#comparativo", label: "vs Shopify" },
   { href: "#faq", label: "Perguntas" },
 ];
 
@@ -34,9 +35,9 @@ export function Nav() {
         <a
           href="#topo"
           className="font-display text-xl md:text-2xl tracking-tightish text-ink hover:text-accent-deep transition-colors"
-          aria-label="Forja AI — início"
+          aria-label="Forjage — início"
         >
-          Forja<span className="text-accent">.AI</span>
+          Forj<span className="text-accent">age</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8" aria-label="Principal">
