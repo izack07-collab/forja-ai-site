@@ -12,12 +12,105 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Forjage — sua loja vendendo do anúncio ao pós-venda num lugar só" />
     <meta property="og:description" content="4 pilares integrados: vitrine + agente IA WhatsApp + CRM + atribuição Meta/Google Ads. Montado em até 15 dias úteis. A partir de R$ 3.000." />
+
+    <!--
+      🔵 NOVO (F5.a) — CANONICAL
+      Decisao do Isaac (ver proposta F5, secao "Canonical fantasma"):
+      o dominio custom forjage.com.br ainda NAO esta conectado na Vercel
+      (Iris §1: live:false, so dominio .vercel.app). Enquanto nao existir:
+
+      OPCAO A (recomendada se for divulgar JA, antes de comprar dominio):
+        apontar o canonical pro proprio .vercel.app pra o Google nao indexar
+        um canonical fantasma. Trocar a linha abaixo por:
+        <link rel="canonical" href="https://forja-ai-site.vercel.app" />
+
+      OPCAO B (recomendada se o dominio sai em dias — Etapa 3):
+        comprar forjage.com.br (Registro.br ~R$40), apontar DNS pra Vercel,
+        anexar na Vercel, e MANTER a linha abaixo como esta.
+
+      Mantida a OPCAO B por padrao (a marca ja decidiu forjage.com.br).
+      Se o lancamento vier antes do dominio, aplicar OPCAO A.
+    -->
     <link rel="canonical" href="https://forjage.com.br" />
     <meta property="og:locale" content="pt_BR" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--
+      🔵 NOVO (F5.a) — PLAUSIBLE ANALYTICS (recomendado: cookieless, LGPD-friendly)
+      Por que Plausible e nao GA4: sem cookie -> sem banner de consentimento,
+      leve (~1KB), e Forjage vende "numero que voce entende" — Plausible e o
+      que entrega isso sem o peso/ruido do GA4. GA4 e gratis e fica como
+      alternativa se o Isaac ja usar o ecossistema Google.
+
+      Vite substitui %VITE_PLAUSIBLE_DOMAIN% no build. Se a env nao estiver
+      setada, a string fica literal e o script nao casa nenhum dominio valido
+      -> nao trackeia (fail-safe). Isaac preenche VITE_PLAUSIBLE_DOMAIN no .env.
+      `defer` garante que nao bloqueia render.
+    -->
+    <script
+      defer
+      data-domain="%VITE_PLAUSIBLE_DOMAIN%"
+      src="https://plausible.io/js/script.js"
+    ></script>
+    <!-- expoe window.plausible() pra disparar o goal "Lead" via analytics.ts -->
+    <script>
+      window.plausible =
+        window.plausible ||
+        function () {
+          (window.plausible.q = window.plausible.q || []).push(arguments);
+        };
+    </script>
+
+    <!--
+      🔵 NOVO (F5.a) — META PIXEL (client-side)
+      Carrega SO se VITE_META_PIXEL_ID estiver preenchido. Vite substitui o
+      placeholder no build. O guard `if (PIXEL_ID && PIXEL_ID.indexOf('VITE_') === -1)`
+      garante que, sem env setada (placeholder literal), o Pixel NAO inicializa
+      (fail-safe — nada de PageView fantasma, nada quebra).
+
+      Eventos:
+        - PageView: disparado aqui no load.
+        - Lead: disparado pelo app via src/lib/analytics.ts (trackLead) quando
+          o visitante clica em "Falar com a Forjage" / mailto / wa.me futuro.
+
+      CAPI (server-side) NAO entra agora — backend Forjage nao existe (Iris §6/§7).
+      Pixel-only perde ~20-35% de conversao; aceitavel no site institucional MVP.
+      Valor real do Pixel ID: placeholder VITE_META_PIXEL_ID, Isaac preenche.
+    -->
+    <script>
+      (function () {
+        var PIXEL_ID = "%VITE_META_PIXEL_ID%";
+        if (!PIXEL_ID || PIXEL_ID.indexOf("VITE_") !== -1) return; // env ausente -> no-op
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod
+              ? n.callMethod.apply(n, arguments)
+              : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = "2.0";
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        window.fbq("init", PIXEL_ID);
+        window.fbq("track", "PageView");
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,4 +1,5 @@
 import { Linkedin, Mail, Globe } from "lucide-react";
+import { trackLead, withUtm } from "@/lib/analytics";
 
 export function Footer() {
   return (
@@ -64,7 +65,8 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="mailto:izack07@gmail.com"
+                  href={withUtm("mailto:izack07@gmail.com", { channel: "footer-email", utm_source_fallback: "site" })}
+                  onClick={() => trackLead("footer-email")}
                   className="inline-flex items-center gap-2 hover:text-bg transition-colors"
                 >
                   <Mail className="h-4 w-4" strokeWidth={1.5} />

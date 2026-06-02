@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { trackLead, withUtm } from "@/lib/analytics";
 
 /**
  * CTA flutuante no canto inferior direito.
@@ -55,7 +56,11 @@ export function WhatsAppFloat() {
               Preencher formulário
             </a>
             <a
-              href="mailto:izack07@gmail.com?subject=Forjage%20%C2%B7%20Quero%20saber%20mais"
+              href={withUtm(
+                "mailto:izack07@gmail.com?subject=Forjage%20%C2%B7%20Quero%20saber%20mais",
+                { channel: "whatsapp-float-email", utm_source_fallback: "site" }
+              )}
+              onClick={() => trackLead("whatsapp-float-email")}
               className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-bg border border-line text-ink rounded-md text-sm font-medium hover:border-accent transition-colors"
             >
               Mandar email
@@ -68,7 +73,7 @@ export function WhatsAppFloat() {
       )}
 
       <button
-        onClick={() => setOpen(!open)}
+        onClick={() => { if (!open) trackLead("whatsapp-float-open"); setOpen(!open); }}
         aria-label={open ? "Fechar contato" : "Abrir contato"}
         className={cn(
           "group flex items-center gap-2 px-5 py-3.5 rounded-full shadow-elevated transition-all",

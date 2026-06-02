@@ -1,6 +1,6 @@
-# Forja AI — Site Institucional
+# Forjage — Site Institucional
 
-Site one-page institucional da Forja AI. Apresenta o pacote (vitrine + CRM + agente IA WhatsApp) pra donas de loja física brasileira.
+Site one-page institucional da Forjage. Apresenta o pacote (vitrine + CRM + agente IA WhatsApp) pra donas de loja física brasileira.
 
 ## Stack
 
@@ -38,7 +38,7 @@ pnpm preview
 npx vercel
 ```
 
-Vai gerar uma URL preview tipo `forja-ai-site-<hash>.vercel.app`. Quando o domínio `forjaai.com.br` estiver comprado, configurar via dashboard Vercel.
+Vai gerar uma URL preview tipo `forja-ai-site-<hash>.vercel.app`. Quando o domínio `forjage.com.br` estiver comprado, configurar via dashboard Vercel.
 
 ## Estrutura
 
@@ -49,44 +49,53 @@ src/
 ├── index.css                     # Tailwind base + components customizados (eyebrow, h-display, h-section, etc.)
 ├── lib/utils.ts                  # cn helper
 ├── components/
-│   ├── ui/                       # Shadcn customizado pra paleta Forja AI
+│   ├── ui/                       # Shadcn customizado pra paleta Forjage
 │   │   ├── button.tsx
 │   │   ├── input.tsx
 │   │   ├── textarea.tsx
 │   │   ├── label.tsx
 │   │   ├── accordion.tsx
 │   │   └── separator.tsx
-│   └── sections/                 # 7 seções da one-page
-│       ├── Nav.tsx
-│       ├── Hero.tsx
-│       ├── ComoFunciona.tsx
-│       ├── Pacotes.tsx
-│       ├── Case.tsx
-│       ├── FAQ.tsx
-│       ├── Contato.tsx
-│       └── Footer.tsx
+│   ├── sections/                 # 11 seções da one-page
+│   │   ├── Nav.tsx
+│   │   ├── Hero.tsx
+│   │   ├── ComoFunciona.tsx
+│   │   ├── Ecossistema.tsx
+│   │   ├── Pacotes.tsx
+│   │   ├── Comparativo.tsx
+│   │   ├── Tecnologias.tsx
+│   │   ├── Case.tsx
+│   │   ├── FAQ.tsx
+│   │   ├── Contato.tsx
+│   │   └── Footer.tsx
+│   └── WhatsAppFloat.tsx         # CTA flutuante (fora de sections/)
 └── (sem outras pastas — one-page sem rotas)
 ```
 
 ## Estrutura visual (ordem da página)
 
-1. **Nav** sticky com 4 links + CTA "Falar comigo"
+1. **Nav** sticky com links + CTA "Falar comigo"
 2. **Hero** com headline editorial italic + CTAs principais
 3. **Como funciona** em 3 passos numerados
-4. **Pacotes** Essencial vs Completo (Completo destacado)
-5. **Case** Ri Pratas (placeholder até foto real chegar)
-6. **FAQ** 7 perguntas críticas
-7. **Contato** form mailto + canais alternativos
-8. **Footer**
+4. **Ecossistema** 4 pilares (vitrine + CRM + agente IA + atribuição)
+5. **Pacotes** modular (vitrine base + peças adicionais)
+6. **Comparativo** Forjage × Shopify × Nuvemshop
+7. **Tecnologias** grid de stack
+8. **Case** Ri Pratas (placeholder até foto real chegar)
+9. **FAQ** perguntas críticas
+10. **Contato** form mailto + canais alternativos
+11. **Footer**
+
+\+ **WhatsAppFloat** — CTA flutuante de WhatsApp fixo na tela (fora de `sections/`).
 
 ## Pendências externas (Isaac executa)
 
-- [ ] Comprar domínio `forjaai.com.br` ou `forja.ai`
+- [ ] Comprar domínio `forjage.com.br` (+ `.com` e `.ai` opcionais)
 - [ ] Configurar DNS no Vercel
-- [ ] Trocar email do form pra `contato@forjaai.com.br` quando Google Workspace estiver ativo
+- [ ] Trocar email do form pra `contato@forjage.com.br` quando Google Workspace estiver ativo
 - [ ] Adicionar foto real da Ri Pratas no Case (substituir placeholder)
 - [ ] Atualizar métricas reais do Case após 30 dias de operação
 
 ## Contexto
 
-Parte da operação **Forja AI** do Isaac. Spec completo em [opensquad/docs/superpowers/specs/2026-05-17-forja-ai-squad-design.md](../opensquad/docs/superpowers/specs/2026-05-17-forja-ai-squad-design.md).
+Parte da operação **Forjage** do Isaac. Spec completo em [opensquad/docs/superpowers/specs/2026-05-17-forja-ai-squad-design.md](../opensquad/docs/superpowers/specs/2026-05-17-forja-ai-squad-design.md).
