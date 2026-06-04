@@ -5,12 +5,12 @@ const steps = [
     n: "01",
     icon: ShoppingBag,
     title: "Você mostra sua loja",
-    desc: "Manda o que vende, o tom da marca, as fotos. Cuido do resto: catálogo organizado, vitrine bonita, mobile primeiro. Você não precisa aprender ferramenta nova.",
+    desc: "Manda o que vende, o tom da marca, as fotos. A gente cuida do resto: catálogo organizado, vitrine bonita, feita pro celular. Você não precisa aprender ferramenta nova.",
   },
   {
     n: "02",
     icon: Wallet,
-    title: "Conecto pagamento e frete",
+    title: "A gente conecta pagamento e frete",
     desc: "Pix com desconto, cartão parcelado, Melhor Envio integrado. Cliente compra direto sem te chamar no WhatsApp pedindo Pix manual ou foto de modelo.",
   },
   {

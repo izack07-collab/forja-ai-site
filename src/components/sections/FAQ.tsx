@@ -8,7 +8,7 @@ import {
 const perguntas = [
   {
     q: "Isso é tipo Shopify ou Nuvemshop?",
-    a: "Não. Shopify e Nuvemshop são plataformas SaaS onde você aluga um espaço pronto e adapta sua loja às regras delas. O que monto pra você é um pacote sob medida: código próprio rodando na sua marca, integrado com Pix/cartão/frete brasileiros, consultor virtual no WhatsApp e o controle de qual anúncio trouxe cada venda, que essas plataformas não têm nativo. Você não fica refém de pacote nem paga taxa por venda extra.",
+    a: "Não. Shopify e Nuvemshop são plataformas SaaS onde você aluga um espaço pronto e adapta sua loja às regras delas. O que a Forjage monta pra você é um pacote sob medida: código próprio rodando na sua marca, integrado com Pix/cartão/frete brasileiros, consultor virtual no WhatsApp e o controle de qual anúncio trouxe cada venda, que essas plataformas não têm nativo. Você não fica refém de pacote nem paga taxa por venda extra.",
   },
   {
     q: "O CRM mostra de onde veio cada venda?",
@@ -24,7 +24,7 @@ const perguntas = [
   },
   {
     q: "E se eu não souber mexer no painel?",
-    a: "O painel é feito pro celular e desenhado pra dona de loja, não pra programador. Cadastrar produto, mudar foto, marcar pedido como enviado, ver o que vendeu hoje: tudo em 3 toques no celular. Faço um vídeo de 15 minutos te mostrando como usar e fico disponível no WhatsApp na primeira semana pra qualquer dúvida.",
+    a: "O painel é feito pro celular e desenhado pra dona de loja, não pra programador. Cadastrar produto, mudar foto, marcar pedido como enviado, ver o que vendeu hoje: tudo em 3 toques no celular. A gente faz um vídeo de 15 minutos te mostrando como usar e fica disponível no WhatsApp na primeira semana pra qualquer dúvida.",
   },
   {
     q: "O agente IA é confiável? Não vai falar bobagem com cliente?",
@@ -32,7 +32,7 @@ const perguntas = [
   },
   {
     q: "Tem fidelidade ou contrato longo?",
-    a: "Não. A mensalidade cobre a infraestrutura (hospedagem, manutenção, suporte, atualizações). Você pode cancelar a qualquer momento com 30 dias de aviso. Levo seus dados em uma exportação organizada se quiser migrar pra outro lugar. Sua loja é sua, seus dados são seus.",
+    a: "Não. A mensalidade cobre a infraestrutura (hospedagem, manutenção, suporte, atualizações). Você pode cancelar a qualquer momento com 30 dias de aviso. A gente entrega seus dados numa exportação organizada se quiser migrar pra outro lugar. Sua loja é sua, seus dados são seus.",
   },
   {
     q: "Como funciona o pagamento do meu cliente final?",
@@ -44,7 +44,7 @@ const perguntas = [
   },
   {
     q: "Preciso saber mexer com Meta Ads ou Google Ads?",
-    a: "Você precisa saber criar campanha lá (ou contratar alguém que crie). O que eu entrego é a infraestrutura que mostra o que cada campanha está rendendo. Não rodo tráfego pra você. Entrego o painel que faz seu tráfego deixar de ser achismo. Se você ainda não anuncia, o rastreio fica armado pra quando começar.",
+    a: "Você precisa saber criar campanha lá (ou contratar alguém que crie). O que a Forjage entrega é a infraestrutura que mostra o que cada campanha está rendendo. A gente não roda tráfego pra você, entrega o painel que faz seu tráfego deixar de ser achismo. Se você ainda não anuncia, o rastreio fica armado pra quando começar.",
   },
 ];
 

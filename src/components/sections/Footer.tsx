@@ -55,7 +55,7 @@ export function Footer() {
 
           <div className="md:col-span-4">
             <p className="text-xs uppercase tracking-wider2 text-bg/40 mb-4">
-              Falar com o Isaac
+              Falar com a Forjage
             </p>
             <ul className="space-y-2 text-sm">
               <li>

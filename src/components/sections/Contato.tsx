@@ -22,7 +22,7 @@ export function Contato() {
     const conta = String(data.get("conta") || "");
 
     const texto =
-      `Oi Isaac! Vim pelo site da Forjage.\n\n` +
+      `Oi! Vim pelo site da Forjage.\n\n` +
       `Me chamo ${nome}, sou da loja ${loja} (${cidade}).\n` +
       `Meu WhatsApp: ${wpp}.` +
       (conta ? `\n\n${conta}` : "");
@@ -54,7 +54,7 @@ export function Contato() {
               em 4 campos.
             </h2>
             <p className="text-lg text-bg/70 mt-6 leading-relaxed text-pretty">
-              Te respondo no WhatsApp em até 24h. Sem agendamento, sem
+              A gente responde no WhatsApp em até 24h. Sem agendamento, sem
               questionário longo. Só uma conversa direta pra ver se faz sentido
               pra você.
             </p>
@@ -68,7 +68,7 @@ export function Contato() {
                 <div>
                   <p className="text-sm text-bg font-medium">WhatsApp direto</p>
                   <p className="text-sm text-bg/60">
-                    Você fala comigo, sem robô e sem fila de atendimento
+                    Você fala com a gente, sem robô e sem fila de atendimento
                   </p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export function Contato() {
 
               <p className="text-xs text-ink-muted leading-relaxed text-center">
                 Ao enviar, abre o WhatsApp com sua mensagem já pronta. É só
-                tocar em enviar. Seus dados ficam só comigo.
+                tocar em enviar. Seus dados ficam só com a gente.
               </p>
             </form>
           </div>

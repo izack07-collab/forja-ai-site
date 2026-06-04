@@ -174,7 +174,7 @@ export function Pacotes() {
                 de "ligar agente IA com CRM depois".
               </p>
               <p className="text-base text-ink leading-relaxed">
-                <span className="font-medium">Fechamento de conjunto sai mais barato que somar peça por peça.</span> Mando orçamento exato após
+                <span className="font-medium">Fechamento de conjunto sai mais barato que somar peça por peça.</span> A gente manda o orçamento exato após
                 entender seu volume e o que você precisa primeiro.
               </p>
               <div className="mt-6">

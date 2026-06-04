@@ -6,7 +6,7 @@ import { trackLead } from "@/lib/analytics";
 const WPP_DIRETO =
   "https://wa.me/5511985587684?text=" +
   encodeURIComponent(
-    "Oi Isaac! Vim pelo site da Forjage, quero saber mais sobre montar minha loja.",
+    "Oi! Vim pelo site da Forjage, quero saber mais sobre montar minha loja.",
   );
 
 /**
