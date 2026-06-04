@@ -21,7 +21,7 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="flex items-center gap-2 mb-8 animate-fade-in">
             <Sparkles className="h-4 w-4 text-accent-deep" strokeWidth={1.5} />
-            <span className="eyebrow">Forjage · Ecossistema de loja online completo</span>
+            <span className="eyebrow">Forjage · Ecossistema completo pra sua loja escalar</span>
           </div>
 
           <h1 className="h-display font-medium italic text-balance leading-[1.02] md:text-display-xl animate-fade-up">
