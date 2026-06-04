@@ -1,4 +1,4 @@
-import { Check, Sparkles } from "lucide-react";
+import { Check, Sparkles, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type Peca = {
@@ -145,9 +145,13 @@ export function Pacotes() {
                 ))}
               </ul>
 
-              <p className="text-xs text-ink-muted pt-3 border-t border-line-soft">
-                Valor sob orçamento conforme escopo combinado.
-              </p>
+              <a
+                href="#contato"
+                className="text-xs font-medium text-accent-deep hover:text-accent pt-3 border-t border-line-soft inline-flex items-center gap-1.5 transition-colors"
+              >
+                Falar sobre essa peça
+                <ArrowRight className="h-3 w-3" />
+              </a>
             </article>
           ))}
         </div>
