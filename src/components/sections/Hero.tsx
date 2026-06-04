@@ -37,10 +37,12 @@ export function Hero() {
             className="lead mt-8 text-pretty md:text-xl animate-fade-up"
             style={{ animationDelay: "120ms" }}
           >
-            Vitrine online, consultor no WhatsApp, um painel com seu
-            financeiro e o registro de qual anúncio trouxe cada venda. Tudo
-            montado pra você por quem já fez uma loja do zero. Uma operação só,
-            não quatro fornecedores soltos.
+            Vitrine online, um consultor de IA atendendo no WhatsApp 24 horas,
+            um painel com seu financeiro e o registro de qual anúncio trouxe
+            cada venda. O agente segura o atendimento sozinho e te chama só no
+            que importa, já com a situação na mão pra você decidir. Tudo
+            montado por quem já fez uma loja do zero, numa operação só, não
+            quatro fornecedores soltos.
           </p>
 
           <div
