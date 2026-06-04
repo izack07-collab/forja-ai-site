@@ -7,20 +7,19 @@ type Peca = {
   inclui: string[];
 };
 
-const pecaSolta: Peca = {
-  nome: "Vitrine pública",
-  resumo: "A loja online de verdade: catálogo, checkout Pix/cartão, no seu domínio.",
-  inclui: [
-    "Catálogo + pagamento Pix/cartão",
-    "Frete automático (Melhor Envio)",
-    "Rastreio de qual anúncio vende",
-    "Domínio próprio (sua marca no ar)",
-    "Feita pro celular",
-    "7 dias úteis pra ficar no ar",
-  ],
-};
-
-const pecasAdicionais: Peca[] = [
+const pecas: Peca[] = [
+  {
+    nome: "Vitrine pública",
+    resumo: "A loja online de verdade: catálogo, checkout Pix/cartão, no seu domínio.",
+    inclui: [
+      "Catálogo + pagamento Pix/cartão",
+      "Frete automático (Melhor Envio)",
+      "Rastreio de qual anúncio vende",
+      "Domínio próprio (sua marca no ar)",
+      "Feita pro celular",
+      "7 dias úteis pra ficar no ar",
+    ],
+  },
   {
     nome: "Agente IA no WhatsApp",
     resumo: "Consultor virtual 24/7 que atende, recupera carrinho e faz follow-up.",
@@ -62,7 +61,7 @@ export function Pacotes() {
   return (
     <section id="pacotes" className="section bg-bg">
       <div className="container">
-        <div className="max-w-3xl mb-16 md:mb-20">
+        <div className="max-w-3xl mb-12 md:mb-16">
           <p className="eyebrow mb-4">Pacotes</p>
           <h2 className="h-section text-balance">
             <span className="italic font-display">Monte do seu jeito</span>.
@@ -71,41 +70,43 @@ export function Pacotes() {
           <p className="lead mt-6 text-pretty">
             Você escolhe: a operação completa ou só as peças que precisa
             agora, vitrine, agente no WhatsApp, painel ou rastreio de anúncios,
-            juntas ou separadas. <span className="text-ink font-medium">No conjunto completo, a condição é
-            a melhor</span> e tudo já nasce conversando, sem retrabalho de integração depois.
+            juntas ou separadas.
           </p>
         </div>
 
-        {/* Peça base — vitrine */}
-        <div className="max-w-5xl mb-8">
+        {/* Destaque — operação completa (o que mais escala) */}
+        <div className="max-w-5xl mb-12">
           <article className="relative rounded-xl p-8 md:p-10 bg-bg-deep text-bg border border-accent shadow-elevated">
             <span className="absolute -top-3 left-8 px-3 py-1 bg-accent text-bg-deep text-xs font-medium uppercase tracking-wider2 rounded">
-              Foi por onde a Ri Pratas começou
+              O que mais escala
             </span>
 
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-              <div>
-                <h3 className="font-display text-3xl md:text-4xl mb-2 tracking-tightish text-bg">
-                  {pecaSolta.nome}
+              <div className="md:max-w-xl">
+                <h3 className="font-display text-3xl md:text-4xl mb-3 tracking-tightish text-bg">
+                  A operação completa
                 </h3>
-                <p className="text-bg/70 text-sm leading-relaxed">
-                  {pecaSolta.resumo}
+                <p className="text-bg/75 text-sm md:text-base leading-relaxed text-pretty">
+                  Vitrine, agente IA, painel e rastreio de anúncios trabalhando
+                  juntos desde o dia 1. É a combinação que tira você do gargalo e
+                  deixa a loja crescer. Fechar tudo junto sai na melhor condição
+                  e já nasce integrado, sem retrabalho depois.
                 </p>
               </div>
               <Button asChild variant="accent" size="lg" className="shrink-0">
-                <a href="#contato">Quero a vitrine</a>
+                <a href="#contato">Quero a operação completa</a>
               </Button>
             </div>
 
-            <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-2.5 border-t border-bg/15 pt-6 mt-6">
-              {pecaSolta.inclui.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <Check
-                    className="h-4 w-4 mt-1 shrink-0 text-accent"
-                    strokeWidth={2.5}
+            <ul className="grid sm:grid-cols-2 md:grid-cols-4 gap-2.5 border-t border-bg/15 pt-6 mt-6">
+              {pecas.map((p) => (
+                <li key={p.nome} className="flex items-start gap-2.5">
+                  <Sparkles
+                    className="h-4 w-4 mt-0.5 shrink-0 text-accent"
+                    strokeWidth={1.75}
                   />
-                  <span className="text-sm leading-relaxed text-bg/85">
-                    {item}
+                  <span className="text-sm leading-snug text-bg/85">
+                    {p.nome}
                   </span>
                 </li>
               ))}
@@ -113,10 +114,10 @@ export function Pacotes() {
           </article>
         </div>
 
-        {/* Peças adicionais */}
-        <p className="eyebrow mb-6">Combine as outras peças como quiser</p>
-        <div className="grid md:grid-cols-3 gap-6">
-          {pecasAdicionais.map((p) => (
+        {/* Peças individuais — niveladas */}
+        <p className="eyebrow mb-6">Ou pegue só as peças que quiser</p>
+        <div className="grid md:grid-cols-2 gap-6">
+          {pecas.map((p) => (
             <article
               key={p.nome}
               className="rounded-xl p-6 md:p-7 bg-bg border border-line shadow-soft hover:shadow-medium hover:border-accent/50 transition-all flex flex-col gap-4"
@@ -130,7 +131,7 @@ export function Pacotes() {
                 </p>
               </header>
 
-              <ul className="space-y-2 flex-1 pt-3 border-t border-line-soft">
+              <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-2 flex-1 pt-3 border-t border-line-soft">
                 {p.inclui.map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <Check
@@ -149,35 +150,6 @@ export function Pacotes() {
               </p>
             </article>
           ))}
-        </div>
-
-        {/* Bloco conjunto */}
-        <div className="mt-12 max-w-5xl rounded-xl p-8 md:p-10 border border-accent bg-accent-wash">
-          <div className="flex items-start gap-4">
-            <div className="p-2.5 rounded-lg bg-accent/15 text-accent-deep shrink-0">
-              <Sparkles className="h-6 w-6" strokeWidth={1.5} />
-            </div>
-            <div className="flex-1">
-              <h3 className="font-display text-2xl md:text-3xl text-ink tracking-tightish mb-3">
-                Conjunto completo (vitrine + agente + painel + rastreio)
-              </h3>
-              <p className="text-base text-ink-soft leading-relaxed text-pretty mb-4">
-                Quando você fecha tudo de uma vez, o desconto é real. A
-                instalação acontece no mesmo setup (os 4 pilares conversam
-                desde o dia 1), sem retrabalho de integração nem custo extra
-                de "ligar agente IA com CRM depois".
-              </p>
-              <p className="text-base text-ink leading-relaxed">
-                <span className="font-medium">Fechamento de conjunto sai mais barato que somar peça por peça.</span> A gente manda o orçamento exato após
-                entender seu volume e o que você precisa primeiro.
-              </p>
-              <div className="mt-6">
-                <Button asChild variant="accent" size="lg">
-                  <a href="#contato">Pedir orçamento personalizado</a>
-                </Button>
-              </div>
-            </div>
-          </div>
         </div>
 
         <p className="text-sm text-ink-muted mt-8 max-w-3xl">
