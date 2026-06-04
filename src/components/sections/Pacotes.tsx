@@ -9,7 +9,7 @@ type Peca = {
 
 const pecaSolta: Peca = {
   nome: "Vitrine pública",
-  resumo: "Base obrigatória — sem isso, nada conversa.",
+  resumo: "Base obrigatória: sem isso, nada conversa.",
   inclui: [
     "Catálogo + checkout Pix/cartão",
     "Frete automático (Melhor Envio)",
@@ -23,7 +23,7 @@ const pecaSolta: Peca = {
 const pecasAdicionais: Peca[] = [
   {
     nome: "Agente IA no WhatsApp",
-    resumo: "Adiciona vendedor virtual 24/7 treinado com seu catálogo.",
+    resumo: "Adiciona consultor virtual 24/7 treinado com seu catálogo.",
     inclui: [
       "Atendimento texto + áudio + foto",
       "Busca produto + foto + frete + link carrinho",
@@ -69,7 +69,7 @@ export function Pacotes() {
           <p className="lead mt-6 text-pretty">
             Você começa pela vitrine (R$ 3.000) e adiciona as outras peças
             quando fizer sentido. <span className="text-ink font-medium">Comprando o conjunto completo,
-            você paga menos</span> que somando peça por peça depois — a integração
+            você paga menos</span> que somando peça por peça depois. A integração
             sai pronta no primeiro setup, sem retrabalho.
           </p>
         </div>
@@ -190,7 +190,7 @@ export function Pacotes() {
           Mensalidade de infraestrutura cobre hospedagem, manutenção,
           suporte e atualizações. Sem fidelidade (cancela com 30 dias de
           aviso). Você sempre leva seus dados se quiser migrar. A Forjage
-          não cobra comissão por venda — só a mensalidade fixa de infra.
+          não cobra comissão por venda, só a mensalidade fixa de infra.
         </p>
       </div>
     </section>

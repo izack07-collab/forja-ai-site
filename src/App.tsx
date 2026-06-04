@@ -19,8 +19,8 @@ function App() {
         <Tecnologias />
         <ComoFunciona />
         <Ecossistema />
-        <Pacotes />
         <Case />
+        <Pacotes />
         <FAQ />
         <Contato />
       </main>

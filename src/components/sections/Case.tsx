@@ -92,19 +92,19 @@ export function Case() {
                 </p>
               </div>
               <div>
-                <p className="font-display text-3xl md:text-4xl text-accent-deep">
-                  R$17k
+                <p className="font-display text-3xl md:text-4xl text-accent-deep italic">
+                  Sozinha
                 </p>
                 <p className="text-xs text-ink-muted uppercase tracking-wider2 mt-1">
-                  capturados por agente
+                  a cliente compra
                   <br />
-                  em 6 meses de produção
+                  sem te chamar no privado
                 </p>
               </div>
             </div>
 
             <p className="text-sm text-ink-muted">
-              O agente atua como consultor — tira dúvida, mostra produto,
+              O agente atua como consultor: tira dúvida, mostra produto,
               quebra objeção e encaminha pro checkout. Você para de responder
               mensagem repetida; o cliente para de esperar.
             </p>

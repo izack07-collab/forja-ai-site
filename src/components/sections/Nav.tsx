@@ -34,7 +34,7 @@ export function Nav() {
         <a
           href="#topo"
           className="font-display text-xl md:text-2xl tracking-tightish text-ink hover:text-accent-deep transition-colors"
-          aria-label="Forjage — início"
+          aria-label="Forjage, início"
         >
           Forj<span className="text-accent">age</span>
         </a>
@@ -53,7 +53,7 @@ export function Nav() {
 
         <div className="hidden md:block">
           <Button asChild variant="accent" size="sm">
-            <a href="#contato">Falar comigo</a>
+            <a href="#contato">Falar com a Forjage</a>
           </Button>
         </div>
 
@@ -102,7 +102,7 @@ export function Nav() {
             ))}
             <Button asChild variant="accent" size="default" className="mt-4">
               <a href="#contato" onClick={() => setOpen(false)}>
-                Falar comigo
+                Falar com a Forjage
               </a>
             </Button>
           </nav>

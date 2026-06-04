@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { trackLead, withUtm } from "@/lib/analytics";
+import { trackLead } from "@/lib/analytics";
+
+const WPP_DIRETO =
+  "https://wa.me/5511985587684?text=" +
+  encodeURIComponent(
+    "Oi Isaac! Vim pelo site da Forjage, quero saber mais sobre montar minha loja.",
+  );
 
 /**
  * CTA flutuante no canto inferior direito.
- * Hoje abre mailto. Quando WhatsApp Business da Forjage estiver pronto,
- * trocar pra link wa.me direto.
+ * Abre o WhatsApp do Isaac (5511985587684). No futuro, o número será
+ * atendido pelo agente IA da Forjage.
  */
 export function WhatsAppFloat() {
   const [visible, setVisible] = useState(false);
@@ -56,14 +62,13 @@ export function WhatsAppFloat() {
               Preencher formulário
             </a>
             <a
-              href={withUtm(
-                "mailto:izack07@gmail.com?subject=Forjage%20%C2%B7%20Quero%20saber%20mais",
-                { channel: "whatsapp-float-email", utm_source_fallback: "site" }
-              )}
-              onClick={() => trackLead("whatsapp-float-email")}
+              href={WPP_DIRETO}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackLead("whatsapp-float-direto")}
               className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-bg border border-line text-ink rounded-md text-sm font-medium hover:border-accent transition-colors"
             >
-              Mandar email
+              Chamar no WhatsApp
             </a>
           </div>
         </div>

@@ -30,20 +30,17 @@ export function Hero() {
             <span className="text-accent-deep">do anúncio ao pós-venda</span>
             <span className="not-italic font-light">,</span>
             <br />
-            num lugar só, com
-            <br />
-            número que você entende.
+            num lugar só.
           </h1>
 
           <p
             className="lead mt-8 text-pretty md:text-xl animate-fade-up"
             style={{ animationDelay: "120ms" }}
           >
-            Vitrine online, consultor virtual no WhatsApp, CRM com seu
-            financeiro e atribuição do tráfego pago: <span className="font-display italic text-ink">tudo montado pra você</span>,
-            por quem já fez uma loja inteira do zero. Você vê
-            qual anúncio trouxe a venda, qual peça gira mais e
-            onde investir o próximo real.
+            Vitrine online, consultor no WhatsApp, CRM com seu financeiro e o
+            controle de qual anúncio trouxe cada venda. <span className="font-display italic text-ink">Tudo montado pra você</span> por
+            quem já fez uma loja do zero. Uma operação só, não quatro
+            fornecedores soltos.
           </p>
 
           <div

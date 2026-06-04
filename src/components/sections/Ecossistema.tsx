@@ -11,7 +11,7 @@ const pilares = [
     icon: ShoppingBag,
     eyebrow: "Pilar 1",
     nome: "Vitrine pública",
-    desc: "A loja online de verdade que sua cliente abre, escolhe peça, fecha pedido e paga — sem te chamar no privado.",
+    desc: "A loja online de verdade que sua cliente abre, escolhe a peça, compra e paga sozinha, sem te chamar no privado.",
     features: [
       "Catálogo com filtros, busca e categorias",
       "Página de produto com galeria e descrição",
@@ -20,32 +20,32 @@ const pilares = [
       "Carrinho abandonado salvo (cliente volta de onde parou)",
       "Pixel Meta + UTM em todas as páginas pra rastrear de onde veio cada venda",
       "Mobile-first (porque 80% das suas clientes compram do celular)",
-      "Domínio próprio (sua marca, não 'forjaai.com/sua-loja')",
+      "Domínio próprio (sua marca, não 'forjage.com/sua-loja')",
     ],
   },
   {
     icon: MessageCircle,
     eyebrow: "Pilar 2",
     nome: "Agente IA no WhatsApp",
-    desc: "Consultor virtual treinado com seu catálogo real, sua voz de marca. Atende 24/7: tira dúvida, mostra produto, quebra objeção e encaminha pro checkout enquanto você dorme.",
+    desc: "Consultor virtual treinado com seu catálogo real, sua voz de marca. Atende 24/7: tira dúvida, mostra produto, quebra objeção e encaminha pro checkout, mesmo quando você não pode responder.",
     features: [
       "Busca peça no seu estoque real (não inventa preço nem disponibilidade)",
       "Manda foto da peça sob demanda, direto do seu catálogo",
       "Calcula frete pra cidade da cliente em tempo real",
       "Gera link de carrinho pré-preenchido (cliente só precisa pagar)",
-      "Entende áudio, foto e PDF — não só texto",
+      "Entende áudio, foto e PDF, não só texto",
       "Tira dúvida educacional (banho, cuidados, garantia) com base na sua FAQ",
       "Escala pra você automaticamente em emergência (defeito, troca, conflito)",
-      "Memória por cliente — não pergunta o mesmo CEP duas vezes",
+      "Memória por cliente: não pergunta o mesmo CEP duas vezes",
       "Anti-injeção: ignora cliente tentando 'hackear' o agente",
-      "Custo operacional baixo (~R$ 50/mês de API mesmo com volume alto)",
+      "Operação enxuta, sem custo escondido por conversa",
     ],
   },
   {
     icon: LayoutDashboard,
     eyebrow: "Pilar 3",
     nome: "CRM próprio",
-    desc: "Painel que substitui Shopify, Excel, agenda e WhatsApp Business — tudo no mesmo lugar, com a sua cara.",
+    desc: "Painel que substitui Shopify, Excel, agenda e WhatsApp Business, tudo no mesmo lugar, com a sua cara.",
     features: [
       "Dashboard com receita do mês, ticket médio, conversão, leads novos",
       "Comparação automática com o mês anterior (delta % visível)",
@@ -67,7 +67,7 @@ const pilares = [
       "Sync nativo com Meta Ads (Facebook + Instagram) e Google Ads",
       "Atribuição por UTM: cada venda mostra a campanha de origem",
       "Custo por venda calculado automático (CAC real, não estimado)",
-      "ROI por campanha visível — sobe o que dá retorno, mata o que não dá",
+      "ROI por campanha visível: sobe o que dá retorno, corta o que não dá",
       "Receita projetada vs realizada do mês",
       "Comparativo de canais: orgânico vs pago vs WhatsApp direto",
       "Alerta quando uma campanha começa a perder performance",
@@ -141,7 +141,7 @@ export function Ecossistema() {
             pilares foram desenhados pra trabalhar juntos. O agente IA precisa
             do catálogo da vitrine pra buscar peça. O CRM precisa dos eventos
             do agente pra montar o funil. A atribuição precisa do Pixel da
-            vitrine. Se você compra só uma peça, ela funciona — mas o ganho
+            vitrine. Se você compra só uma peça, ela funciona, mas o ganho
             real aparece quando os 4 conversam.
           </p>
         </div>

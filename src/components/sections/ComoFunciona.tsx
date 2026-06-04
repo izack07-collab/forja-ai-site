@@ -23,7 +23,7 @@ const steps = [
     n: "04",
     icon: BarChart3,
     title: "Você vê tudo num lugar só",
-    desc: "CRM próprio com receita, ticket médio, conversão, top produtos — e qual anúncio do Meta ou Google trouxe cada venda. Você sabe onde está dando lucro antes de subir o orçamento de tráfego.",
+    desc: "CRM próprio com receita, ticket médio, conversão, top produtos, e qual anúncio do Meta ou Google trouxe cada venda. Você sabe onde está dando lucro antes de subir o orçamento de tráfego.",
   },
 ];
 

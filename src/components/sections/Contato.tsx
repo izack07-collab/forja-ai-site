@@ -21,14 +21,16 @@ export function Contato() {
     const wpp = String(data.get("wpp") || "");
     const conta = String(data.get("conta") || "");
 
-    const corpo = `Oi Isaac,%0A%0AMe chamo ${encodeURIComponent(nome)}, sou da loja ${encodeURIComponent(loja)} (${encodeURIComponent(cidade)}).%0AMeu WhatsApp: ${encodeURIComponent(wpp)}.%0A%0A${encodeURIComponent(conta)}%0A%0AVamos conversar?`;
+    const texto =
+      `Oi Isaac! Vim pelo site da Forjage.\n\n` +
+      `Me chamo ${nome}, sou da loja ${loja} (${cidade}).\n` +
+      `Meu WhatsApp: ${wpp}.` +
+      (conta ? `\n\n${conta}` : "");
 
-    const mailto = `mailto:izack07@gmail.com?subject=${encodeURIComponent(
-      `Forjage · ${loja} (${cidade})`,
-    )}&body=${corpo}`;
+    const whatsapp = `https://wa.me/5511985587684?text=${encodeURIComponent(texto)}`;
 
-    trackLead("form-contato"); // 🔵 dispara Lead (Pixel + Plausible) antes de sair pro mailto
-    window.location.href = mailto;
+    trackLead("form-contato"); // 🔵 dispara Lead (Pixel + Plausible) antes de sair pro WhatsApp
+    window.location.href = whatsapp;
 
     setTimeout(() => setEnviando(false), 800);
   }
@@ -66,7 +68,7 @@ export function Contato() {
                 <div>
                   <p className="text-sm text-bg font-medium">WhatsApp direto</p>
                   <p className="text-sm text-bg/60">
-                    Atendimento humano (sem bot até o pacote estar fechado)
+                    Você fala comigo, sem robô e sem fila de atendimento
                   </p>
                 </div>
               </div>
@@ -154,14 +156,13 @@ export function Contato() {
                 className="w-full"
                 disabled={enviando}
               >
-                {enviando ? "Abrindo email..." : "Enviar"}
+                {enviando ? "Abrindo o WhatsApp..." : "Enviar pelo WhatsApp"}
                 {!enviando && <Send className="h-4 w-4" />}
               </Button>
 
               <p className="text-xs text-ink-muted leading-relaxed text-center">
-                Ao enviar, abre seu cliente de email. Se preferir, manda direto
-                pra <span className="text-ink">izack07@gmail.com</span>. Seus
-                dados ficam só comigo.
+                Ao enviar, abre o WhatsApp com sua mensagem já pronta. É só
+                tocar em enviar. Seus dados ficam só comigo.
               </p>
             </form>
           </div>

@@ -10,12 +10,12 @@ import {
 } from "lucide-react";
 
 const tecnologias = [
-  { icon: CreditCard, nome: "Asaas", contexto: "Pix · Cartão · Split" },
+  { icon: CreditCard, nome: "Asaas", contexto: "Pix · Cartão" },
   { icon: Truck, nome: "Melhor Envio", contexto: "Frete automático" },
-  { icon: Database, nome: "Supabase", contexto: "Backend · RLS · Auth" },
+  { icon: Database, nome: "Supabase", contexto: "Dados seguros" },
   { icon: Brain, nome: "Claude · OpenAI", contexto: "Agente IA" },
-  { icon: MessageCircle, nome: "Evolution API", contexto: "WhatsApp Business" },
-  { icon: Workflow, nome: "n8n", contexto: "Orquestração" },
+  { icon: MessageCircle, nome: "Evolution API", contexto: "WhatsApp" },
+  { icon: Workflow, nome: "n8n", contexto: "Automações" },
   { icon: Megaphone, nome: "Meta Ads", contexto: "Atribuição" },
   { icon: Search, nome: "Google Ads", contexto: "Atribuição" },
 ];
@@ -28,7 +28,7 @@ export function Tecnologias() {
           <p className="eyebrow mb-3">Construído com</p>
           <p className="text-base text-ink-muted max-w-2xl mx-auto text-pretty">
             Stack escolhida pra <span className="italic font-display text-ink">durar</span>.
-            Cada integração é nativa e validada em produção — não é
+            Cada integração é nativa e validada em produção, não é
             "compatível em teoria".
           </p>
         </div>
