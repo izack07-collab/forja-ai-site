@@ -59,22 +59,6 @@ export function Hero() {
               <a href="#ecossistema">Ver o que vem dentro</a>
             </Button>
           </div>
-
-          <div
-            className="mt-14 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 animate-fade-up"
-            style={{ animationDelay: "360ms" }}
-          >
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-success" />
-              <span className="text-xs text-ink-muted">
-                Case Ri Pratas no ar (prata 925, Salvador)
-              </span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-line" />
-            <span className="text-xs text-ink-muted">
-              Comece pela vitrine e escale por peças, no seu ritmo
-            </span>
-          </div>
         </div>
       </div>
     </section>

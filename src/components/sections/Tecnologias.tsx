@@ -58,8 +58,7 @@ export function Tecnologias() {
 
         <p className="text-xs text-ink-muted text-center mt-10 max-w-2xl mx-auto">
           Outras integrações sob demanda (ERP, migração de Shopify, RD Station,
-          Instagram Shopping, etc.) entram por orçamento conforme escopo do
-          cliente.
+          Instagram Shopping, etc.) entram conforme a sua operação pede.
         </p>
       </div>
     </section>
