@@ -63,11 +63,11 @@ export function Pacotes() {
         <div className="max-w-3xl mb-16 md:mb-20">
           <p className="eyebrow mb-4">Pacotes</p>
           <h2 className="h-section text-balance">
-            <span className="italic font-display">A partir de R$ 3.000</span>.
+            <span className="italic font-display">Comece pela vitrine</span>.
             Escala conforme você quer mais peças.
           </h2>
           <p className="lead mt-6 text-pretty">
-            Você começa pela vitrine (R$ 3.000) e adiciona as outras peças
+            Você começa pela vitrine e adiciona as outras peças
             quando fizer sentido. <span className="text-ink font-medium">Comprando o conjunto completo,
             você paga menos</span> que somando peça por peça depois. A integração
             sai pronta no primeiro setup, sem retrabalho.
@@ -106,13 +106,13 @@ export function Pacotes() {
 
               <div className="md:text-right">
                 <span className="block text-xs uppercase tracking-wider2 text-bg/60 mb-2">
-                  A partir de
+                  Investimento
                 </span>
-                <span className="font-display text-5xl md:text-6xl text-bg">
-                  R$ 3.000
+                <span className="font-display text-4xl md:text-5xl text-bg italic">
+                  Sob medida
                 </span>
                 <p className="text-xs text-bg/60 mt-2">
-                  + R$ 290/mês de infraestrutura
+                  a gente passa o orçamento na conversa
                 </p>
               </div>
             </div>

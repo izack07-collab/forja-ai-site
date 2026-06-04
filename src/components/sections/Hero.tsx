@@ -70,7 +70,7 @@ export function Hero() {
             </div>
             <div className="hidden sm:block w-px h-4 bg-line" />
             <span className="text-xs text-ink-muted">
-              A partir de <span className="text-ink font-medium">R$ 3.000</span> (só vitrine) · escala conforme você adiciona peças
+              Comece pela vitrine e escale por peças, no seu ritmo
             </span>
           </div>
         </div>

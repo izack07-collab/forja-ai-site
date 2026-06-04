@@ -12,7 +12,7 @@ const perguntas = [
   },
   {
     q: "O CRM mostra de onde veio cada venda?",
-    a: "Sim, é justamente o 4º pilar. O painel puxa os dados do Meta Ads e do Google Ads sozinho, cruza com o que a vitrine registra em cada visita, e te mostra em português claro: 'Anúncio X do Instagram trouxe R$ 4.200 em vendas esse mês, custou R$ 600, rendeu 7 vezes'. Você vê qual anúncio tá dando retorno antes de colocar mais dinheiro.",
+    a: "Sim, é justamente o 4º pilar. O painel puxa os dados do Meta Ads e do Google Ads sozinho, cruza com o que a vitrine registra em cada visita, e te mostra em português claro qual anúncio trouxe mais venda, quanto custou e quanto rendeu. Você vê qual anúncio tá dando retorno antes de colocar mais dinheiro.",
   },
   {
     q: "Funciona se eu já anuncio no Meta ou Google Ads?",
