@@ -100,7 +100,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-bg/10 flex flex-col md:flex-row justify-between gap-4 text-xs text-bg/40">
-          <p>© 2026 Forjage · Operação solo do Isaac · CNPJ a definir</p>
+          <p>© 2026 Forjage · Isaac Silveira · Desenvolvimento independente</p>
           <p className="font-display italic text-sm">forjage.com.br</p>
         </div>
       </div>

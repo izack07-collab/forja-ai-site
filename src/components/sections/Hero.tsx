@@ -21,7 +21,7 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="flex items-center gap-2 mb-8 animate-fade-in">
             <Sparkles className="h-4 w-4 text-accent-deep" strokeWidth={1.5} />
-            <span className="eyebrow">Forjage · Vitrine · Agente IA · CRM · Tráfego pago integrado</span>
+            <span className="eyebrow">Forjage · Ecossistema de loja online completo</span>
           </div>
 
           <h1 className="h-display font-medium italic text-balance leading-[1.02] md:text-display-xl animate-fade-up">
@@ -39,8 +39,8 @@ export function Hero() {
             className="lead mt-8 text-pretty md:text-xl animate-fade-up"
             style={{ animationDelay: "120ms" }}
           >
-            Vitrine online, vendedor virtual no WhatsApp, CRM com seu
-            financeiro e atribuição do tráfego pago — <span className="font-display italic text-ink">tudo montado pra você</span>,
+            Vitrine online, consultor virtual no WhatsApp, CRM com seu
+            financeiro e atribuição do tráfego pago: <span className="font-display italic text-ink">tudo montado pra você</span>,
             por quem já fez uma loja inteira do zero. Você vê
             qual anúncio trouxe a venda, qual peça gira mais e
             onde investir o próximo real.

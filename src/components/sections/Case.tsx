@@ -13,26 +13,41 @@ export function Case() {
         </div>
 
         <div className="max-w-5xl grid md:grid-cols-12 gap-8 md:gap-12 items-start">
-          {/* Coluna visual — placeholder editorial até as fotos chegarem */}
+          {/* Coluna visual */}
           <div className="md:col-span-5">
-            <div className="aspect-[4/5] rounded-lg overflow-hidden bg-gradient-to-br from-bg-warm via-accent-wash to-bg-warm border border-line shadow-soft relative">
-              <div className="absolute inset-0 flex items-center justify-center text-ink-muted text-sm">
-                <div className="text-center px-6">
-                  <Sparkles
-                    className="h-8 w-8 mx-auto mb-3 text-accent-deep"
-                    strokeWidth={1.25}
-                  />
-                  <p className="font-display italic text-2xl text-ink-soft mb-1">
-                    Ri Pratas
-                  </p>
-                  <p className="text-xs uppercase tracking-wider2 text-ink-muted">
-                    Prata 925 · São Paulo
-                  </p>
-                  <p className="text-xs text-ink-muted mt-6 max-w-[200px] mx-auto">
-                    Foto da loja em breve, fresquinha do shoot
-                  </p>
-                </div>
+            <div className="aspect-[4/5] rounded-lg overflow-hidden bg-gradient-to-br from-bg-warm via-accent-wash to-bg-warm border border-line shadow-soft relative flex flex-col justify-between p-8">
+              {/* Live badge */}
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
+                <span className="text-xs text-ink-muted uppercase tracking-wider2">
+                  No ar desde 19/05/2026
+                </span>
               </div>
+
+              {/* Centro — branding */}
+              <div className="text-center">
+                <Sparkles
+                  className="h-10 w-10 mx-auto mb-4 text-accent-deep"
+                  strokeWidth={1.25}
+                />
+                <p className="font-display italic text-4xl text-ink mb-1">
+                  Ri Pratas
+                </p>
+                <p className="text-sm text-ink-muted uppercase tracking-wider2">
+                  Prata 925 artesanal · São Paulo
+                </p>
+              </div>
+
+              {/* Rodapé — link vivo */}
+              <a
+                href="https://ripratas.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-md border border-line bg-bg/60 px-4 py-3 text-xs text-ink-muted hover:border-accent/50 hover:text-ink-soft transition-colors"
+              >
+                <span>ripratas.com.br</span>
+                <span className="text-accent-deep">↗</span>
+              </a>
             </div>
           </div>
 
@@ -49,7 +64,7 @@ export function Case() {
                 paga sozinha. Eu só apareço quando ela quer fechar mesmo.
               </p>
               <p className="text-sm text-ink-muted mt-4">
-                Depoimento da operação Ri Pratas, em produção desde 19/05/2026
+                Operação Ri Pratas, em produção desde 19/05/2026
               </p>
             </div>
 
@@ -78,21 +93,20 @@ export function Case() {
               </div>
               <div>
                 <p className="font-display text-3xl md:text-4xl text-accent-deep">
-                  Pix +
+                  R$17k
                 </p>
                 <p className="text-xs text-ink-muted uppercase tracking-wider2 mt-1">
-                  cartão integrado,
+                  capturados por agente
                   <br />
-                  sem print manual
+                  em 6 meses de produção
                 </p>
               </div>
             </div>
 
-            <p className="text-sm text-ink-muted italic">
-              Métricas detalhadas (taxa de conversão, ticket médio, redução de
-              tempo no WhatsApp) entram aqui quando completarmos 30 dias de
-              operação. Por enquanto, a verdade nua: o sistema está vivo e a
-              dona da loja tá dormindo mais.
+            <p className="text-sm text-ink-muted">
+              O agente atua como consultor — tira dúvida, mostra produto,
+              quebra objeção e encaminha pro checkout. Você para de responder
+              mensagem repetida; o cliente para de esperar.
             </p>
           </div>
         </div>

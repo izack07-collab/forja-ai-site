@@ -27,7 +27,7 @@ const pilares = [
     icon: MessageCircle,
     eyebrow: "Pilar 2",
     nome: "Agente IA no WhatsApp",
-    desc: "Vendedor virtual treinado com seu catálogo real, sua voz de marca. Atende 24/7 e fecha pedido enquanto você dorme.",
+    desc: "Consultor virtual treinado com seu catálogo real, sua voz de marca. Atende 24/7: tira dúvida, mostra produto, quebra objeção e encaminha pro checkout enquanto você dorme.",
     features: [
       "Busca peça no seu estoque real (não inventa preço nem disponibilidade)",
       "Manda foto da peça sob demanda, direto do seu catálogo",

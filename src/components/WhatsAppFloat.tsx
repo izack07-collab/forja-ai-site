@@ -66,9 +66,6 @@ export function WhatsAppFloat() {
               Mandar email
             </a>
           </div>
-          <p className="text-[10px] text-ink-muted mt-3 text-center">
-            WhatsApp dedicado em breve
-          </p>
         </div>
       )}
 
