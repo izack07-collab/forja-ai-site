@@ -81,41 +81,33 @@ export function Pacotes() {
               Ponto de partida
             </span>
 
-            <div className="grid md:grid-cols-3 gap-8 items-start">
-              <header className="md:col-span-2">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
                 <h3 className="font-display text-3xl md:text-4xl mb-2 tracking-tightish text-bg">
                   {pecaSolta.nome}
                 </h3>
-                <p className="text-bg/70 text-sm mb-4 leading-relaxed">
+                <p className="text-bg/70 text-sm leading-relaxed">
                   {pecaSolta.resumo}
                 </p>
-                <ul className="grid sm:grid-cols-2 gap-2.5">
-                  {pecaSolta.inclui.map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <Check
-                        className="h-4 w-4 mt-1 shrink-0 text-accent"
-                        strokeWidth={2.5}
-                      />
-                      <span className="text-sm leading-relaxed text-bg/85">
-                        {item}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </header>
-
-              <div className="md:text-right">
-                <span className="block text-xs uppercase tracking-wider2 text-bg/60 mb-2">
-                  Investimento
-                </span>
-                <span className="font-display text-4xl md:text-5xl text-bg italic">
-                  Sob medida
-                </span>
-                <p className="text-xs text-bg/60 mt-2">
-                  a gente passa o orçamento na conversa
-                </p>
               </div>
+              <Button asChild variant="accent" size="lg" className="shrink-0">
+                <a href="#contato">Começar pela vitrine</a>
+              </Button>
             </div>
+
+            <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-2.5 border-t border-bg/15 pt-6 mt-6">
+              {pecaSolta.inclui.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <Check
+                    className="h-4 w-4 mt-1 shrink-0 text-accent"
+                    strokeWidth={2.5}
+                  />
+                  <span className="text-sm leading-relaxed text-bg/85">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </article>
         </div>
 

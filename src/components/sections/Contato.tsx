@@ -68,7 +68,7 @@ export function Contato() {
                 <div>
                   <p className="text-sm text-bg font-medium">WhatsApp direto</p>
                   <p className="text-sm text-bg/60">
-                    Você fala com a gente, sem robô e sem fila de atendimento
+                    A conversa acontece no seu WhatsApp, sem formulário longo
                   </p>
                 </div>
               </div>
