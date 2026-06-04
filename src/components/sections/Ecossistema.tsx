@@ -90,10 +90,9 @@ export function Ecossistema() {
             da sua loja, montada peça por peça.
           </h2>
           <p className="lead mt-6 text-pretty">
-            Você pode começar pelo que faz mais sentido agora (geralmente a
-            vitrine) e ir adicionando os outros pilares conforme o caixa
-            permite. Mas comprar tudo junto sai bem mais barato que somar peça
-            por peça depois.
+            Você pode começar pela peça que faz mais sentido agora e ir somando
+            as outras quando quiser. Mas instaladas juntas, elas já nascem
+            conversando, sem retrabalho de integração depois.
           </p>
         </div>
 
