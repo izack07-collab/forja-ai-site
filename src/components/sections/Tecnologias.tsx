@@ -27,9 +27,8 @@ export function Tecnologias() {
         <div className="text-center mb-10 md:mb-14">
           <p className="eyebrow mb-3">Construído com</p>
           <p className="text-base text-ink-muted max-w-2xl mx-auto text-pretty">
-            Stack escolhida pra <span className="italic font-display text-ink">durar</span>.
-            Cada integração é nativa e validada em produção, não é
-            "compatível em teoria".
+            Stack escolhida pra durar. Cada integração é nativa e validada em
+            produção, não é "compatível em teoria".
           </p>
         </div>
 

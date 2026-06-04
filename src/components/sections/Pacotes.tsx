@@ -23,10 +23,12 @@ const pecaSolta: Peca = {
 const pecasAdicionais: Peca[] = [
   {
     nome: "Agente IA no WhatsApp",
-    resumo: "Adiciona consultor virtual 24/7 treinado com seu catálogo.",
+    resumo: "Consultor virtual 24/7 que atende, recupera carrinho e faz follow-up.",
     inclui: [
       "Atendimento texto + áudio + foto",
       "Busca produto + foto + frete + link carrinho",
+      "Recupera carrinho abandonado pra fechar a venda",
+      "Follow-up automático de quem não respondeu",
       "Escalação automática pra você em emergência",
       "Memória por cliente",
       "+3-5 dias úteis no setup",

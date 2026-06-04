@@ -54,9 +54,10 @@ export function Contato() {
               em 4 campos.
             </h2>
             <p className="text-lg text-bg/70 mt-6 leading-relaxed text-pretty">
-              A gente responde no WhatsApp em até 24h. Sem agendamento, sem
-              questionário longo. Só uma conversa direta pra ver se faz sentido
-              pra você.
+              A gente te responde no WhatsApp, geralmente no mesmo dia útil.
+              Cada projeto é acompanhado de perto, do primeiro contato à loja no
+              ar. É tudo montado sob medida pra sua operação, não pacote de
+              prateleira.
             </p>
 
             <div className="mt-10 space-y-4">

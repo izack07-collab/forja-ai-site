@@ -17,7 +17,7 @@ const steps = [
     n: "03",
     icon: MessageCircle,
     title: "Agente consultor entra em cena",
-    desc: "Agente de IA atende WhatsApp 24/7, busca peça no seu catálogo real, manda foto sob demanda, calcula frete e gera link de carrinho pronto pra pagar. Escala pra você quando o assunto é dinheiro ou troca.",
+    desc: "Agente de IA atende no WhatsApp 24/7, mostra a peça, calcula frete e gera o link pronto pra pagar. Vai além: recupera carrinho abandonado e faz follow-up de quem não respondeu. Escala pra você quando o assunto é dinheiro ou troca.",
   },
   {
     n: "04",
