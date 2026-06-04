@@ -103,11 +103,17 @@ export function Case() {
               </div>
             </div>
 
-            <p className="text-sm text-ink-muted">
-              O agente atua como consultor: tira dúvida, mostra produto,
-              quebra objeção e encaminha pro checkout. Você para de responder
-              mensagem repetida; o cliente para de esperar.
-            </p>
+            <div className="rounded-lg border border-accent/30 bg-accent-wash p-6">
+              <p className="text-base text-ink leading-relaxed text-pretty">
+                <span className="font-display italic text-xl text-accent-deep">
+                  A loja roda quase no automático.
+                </span>{" "}
+                Quem toca a Ri Pratas cuida de separar o pedido, postar e do
+                administrativo. Mostrar a peça, tirar dúvida, calcular frete,
+                receber o pagamento e rastrear de onde veio cada venda: o
+                ecossistema faz.
+              </p>
+            </div>
           </div>
         </div>
       </div>
