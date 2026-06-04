@@ -9,7 +9,7 @@ type Peca = {
 
 const pecaSolta: Peca = {
   nome: "Vitrine pública",
-  resumo: "Base obrigatória: sem isso, nada conversa.",
+  resumo: "A loja online de verdade: catálogo, checkout Pix/cartão, no seu domínio.",
   inclui: [
     "Catálogo + pagamento Pix/cartão",
     "Frete automático (Melhor Envio)",
@@ -63,14 +63,14 @@ export function Pacotes() {
         <div className="max-w-3xl mb-16 md:mb-20">
           <p className="eyebrow mb-4">Pacotes</p>
           <h2 className="h-section text-balance">
-            <span className="italic font-display">Comece pela vitrine</span>.
-            Escala conforme você quer mais peças.
+            <span className="italic font-display">Monte do seu jeito</span>.
+            As quatro peças, ou só as que fazem sentido.
           </h2>
           <p className="lead mt-6 text-pretty">
-            Você começa pela vitrine e adiciona as outras peças
-            quando fizer sentido. <span className="text-ink font-medium">Comprando o conjunto completo,
-            você paga menos</span> que somando peça por peça depois. A integração
-            sai pronta no primeiro setup, sem retrabalho.
+            Você escolhe: a operação completa ou só as peças que precisa
+            agora, vitrine, agente no WhatsApp, painel ou rastreio de anúncios,
+            juntas ou separadas. <span className="text-ink font-medium">No conjunto completo, a condição é
+            a melhor</span> e tudo já nasce conversando, sem retrabalho de integração depois.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export function Pacotes() {
         <div className="max-w-5xl mb-8">
           <article className="relative rounded-xl p-8 md:p-10 bg-bg-deep text-bg border border-accent shadow-elevated">
             <span className="absolute -top-3 left-8 px-3 py-1 bg-accent text-bg-deep text-xs font-medium uppercase tracking-wider2 rounded">
-              Ponto de partida
+              Foi por onde a Ri Pratas começou
             </span>
 
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -91,7 +91,7 @@ export function Pacotes() {
                 </p>
               </div>
               <Button asChild variant="accent" size="lg" className="shrink-0">
-                <a href="#contato">Começar pela vitrine</a>
+                <a href="#contato">Quero a vitrine</a>
               </Button>
             </div>
 
@@ -112,7 +112,7 @@ export function Pacotes() {
         </div>
 
         {/* Peças adicionais */}
-        <p className="eyebrow mb-6">Adicione as peças que fazem sentido</p>
+        <p className="eyebrow mb-6">Combine as outras peças como quiser</p>
         <div className="grid md:grid-cols-3 gap-6">
           {pecasAdicionais.map((p) => (
             <article
