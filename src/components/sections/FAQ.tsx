@@ -32,15 +32,15 @@ const perguntas = [
   },
   {
     q: "Tem fidelidade ou contrato longo?",
-    a: "Não. A mensalidade cobre a infraestrutura (hospedagem, manutenção, suporte, atualizações). Você pode cancelar a qualquer momento com 30 dias de aviso. A gente entrega seus dados numa exportação organizada se quiser migrar pra outro lugar. Sua loja é sua, seus dados são seus.",
+    a: "Não. Você pode cancelar a qualquer momento com 30 dias de aviso, sem multa. A gente entrega seus dados numa exportação organizada se quiser migrar pra outro lugar. Sua loja é sua, seus dados são seus.",
   },
   {
     q: "Como funciona o pagamento do meu cliente final?",
     a: "Integração nativa com Asaas: cliente paga Pix com desconto (preferido), cartão parcelado em até 12x, ou boleto (se você ativar). Dinheiro cai direto na sua conta, sem intermediário cobrando taxa por venda. Frete vem do Melhor Envio com cotação automática em tempo real.",
   },
   {
-    q: "Por que começar só pela vitrine sai mais caro depois?",
-    a: "Quando os 4 pilares são instalados juntos no setup inicial, eles já nascem conversando entre si: o agente IA usa o catálogo da vitrine, o painel usa as conversas do agente, o rastreio de anúncios lê os dados da vitrine. Quando você adiciona uma peça depois, é trabalho extra de integração. Daí o orçamento por peça avulsa fica maior que a fatia equivalente do conjunto. Por isso o conjunto sai mais barato em valor absoluto.",
+    q: "Vale instalar as peças juntas ou posso ir somando depois?",
+    a: "Pode somar depois, sem problema. Mas quando os 4 pilares entram juntos no setup inicial, já nascem conversando entre si: o agente IA usa o catálogo da vitrine, o painel usa as conversas do agente, o rastreio de anúncios lê os dados da vitrine. Adicionar uma peça depois dá um trabalho extra de integração que o setup junto já resolve de cara. Se você já sabe que vai querer mais de uma peça, instalar tudo de uma vez é o caminho mais redondo. A gente alinha o que faz sentido pra você no WhatsApp.",
   },
   {
     q: "Preciso saber mexer com Meta Ads ou Google Ads?",

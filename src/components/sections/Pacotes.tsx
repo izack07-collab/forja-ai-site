@@ -157,10 +157,10 @@ export function Pacotes() {
         </div>
 
         <p className="text-sm text-ink-muted mt-8 max-w-3xl">
-          Mensalidade de infraestrutura cobre hospedagem, manutenção,
-          suporte e atualizações. Sem fidelidade (cancela com 30 dias de
-          aviso). Você sempre leva seus dados se quiser migrar. A Forjage
-          não cobra comissão por venda, só a mensalidade fixa de infra.
+          Sem fidelidade: cancela quando quiser, com 30 dias de aviso, e leva
+          seus dados numa exportação organizada se mudar de ideia. A Forjage
+          não cobra comissão por venda, sua loja é sua. O resto a gente alinha
+          direto com você no WhatsApp.
         </p>
       </div>
     </section>
