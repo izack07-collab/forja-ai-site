@@ -18,7 +18,7 @@ const pilares = [
       "Checkout integrado: Pix com desconto + cartão parcelado em até 12x",
       "Frete calculado automático via Melhor Envio",
       "Carrinho abandonado salvo (cliente volta de onde parou)",
-      "Pixel Meta + UTM em todas as páginas pra rastrear de onde veio cada venda",
+      "Rastreio em todas as páginas pra saber qual anúncio trouxe cada venda",
       "Mobile-first (porque 80% das suas clientes compram do celular)",
       "Domínio próprio (sua marca, não 'forjage.com/sua-loja')",
     ],
@@ -52,22 +52,22 @@ const pilares = [
       "Funil visual: lead novo → qualificação → negociação → pago",
       "Top produtos: quais peças giram, quais estão paradas",
       "Cadastro de cliente com histórico, preferências e cashback",
-      "Pedidos: kanban com status (aguardando pagamento, pago, enviado, entregue)",
-      "Carrinhos abandonados pra você recuperar manual ou via agente",
-      "Painel mobile-first (você gerencia tudo do celular entre clientes)",
+      "Pedidos num quadro visual (aguardando pagamento, pago, enviado, entregue)",
+      "Carrinhos abandonados pra você recuperar na mão ou pelo agente",
+      "Painel feito pro celular (você gerencia tudo entre um cliente e outro)",
       "Exportação CSV de qualquer relatório quando precisar",
     ],
   },
   {
     icon: Target,
     eyebrow: "Pilar 4 · diferencial real",
-    nome: "Atribuição + Financeiro num lugar só",
+    nome: "De onde veio cada venda + financeiro",
     desc: "Você sabe qual anúncio do Meta ou Google trouxe cada venda. Acaba o 'acho que essa campanha tá vendendo'.",
     features: [
-      "Sync nativo com Meta Ads (Facebook + Instagram) e Google Ads",
-      "Atribuição por UTM: cada venda mostra a campanha de origem",
-      "Custo por venda calculado automático (CAC real, não estimado)",
-      "ROI por campanha visível: sobe o que dá retorno, corta o que não dá",
+      "Conexão automática com Meta Ads (Facebook + Instagram) e Google Ads",
+      "Cada venda mostra de qual anúncio ela veio",
+      "Quanto custou cada venda, calculado sozinho (não no chute)",
+      "Quanto cada anúncio rendeu, claro na tela: sobe o que dá retorno, corta o que não dá",
       "Receita projetada vs realizada do mês",
       "Comparativo de canais: orgânico vs pago vs WhatsApp direto",
       "Alerta quando uma campanha começa a perder performance",
@@ -138,11 +138,11 @@ export function Ecossistema() {
         <div className="mt-12 max-w-3xl p-6 rounded-md bg-bg-deep text-bg/85 border border-accent/30">
           <p className="text-sm leading-relaxed text-pretty">
             <span className="text-accent font-medium">Importante:</span> os 4
-            pilares foram desenhados pra trabalhar juntos. O agente IA precisa
-            do catálogo da vitrine pra buscar peça. O CRM precisa dos eventos
-            do agente pra montar o funil. A atribuição precisa do Pixel da
-            vitrine. Se você compra só uma peça, ela funciona, mas o ganho
-            real aparece quando os 4 conversam.
+            pilares foram desenhados pra trabalhar juntos. O agente precisa
+            do catálogo da vitrine pra buscar peça. O painel precisa das
+            conversas do agente pra montar o funil de vendas. O rastreio de
+            anúncios precisa dos dados da vitrine. Se você compra só uma peça,
+            ela funciona, mas o ganho real aparece quando os 4 conversam.
           </p>
         </div>
       </div>

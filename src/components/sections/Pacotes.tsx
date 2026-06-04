@@ -11,11 +11,11 @@ const pecaSolta: Peca = {
   nome: "Vitrine pública",
   resumo: "Base obrigatória: sem isso, nada conversa.",
   inclui: [
-    "Catálogo + checkout Pix/cartão",
+    "Catálogo + pagamento Pix/cartão",
     "Frete automático (Melhor Envio)",
-    "Pixel Meta + UTM",
-    "Domínio próprio + deploy",
-    "Mobile-first responsivo",
+    "Rastreio de qual anúncio vende",
+    "Domínio próprio (sua marca no ar)",
+    "Feita pro celular",
     "7 dias úteis pra ficar no ar",
   ],
 };
@@ -36,21 +36,21 @@ const pecasAdicionais: Peca[] = [
     nome: "CRM próprio",
     resumo: "Painel com receita, ticket médio, funil, clientes e pedidos.",
     inclui: [
-      "Dashboard com KPIs e deltas",
-      "Funil visual com kanban",
+      "Painel com seus números, comparado ao mês passado",
+      "Quadro visual dos pedidos",
       "Cadastro de cliente com histórico",
       "Carrinhos abandonados",
       "+3-5 dias úteis no setup",
     ],
   },
   {
-    nome: "Atribuição + Tráfego",
+    nome: "De onde vêm suas vendas",
     resumo: "Conecta Meta Ads e Google Ads. Mostra qual anúncio vendeu.",
     inclui: [
-      "Sync Meta Ads + Google Ads",
-      "ROI e CAC por campanha",
-      "Comparativo de canais",
-      "Alerta de performance",
+      "Conexão com Meta Ads + Google Ads",
+      "Quanto cada anúncio rendeu e custou",
+      "Comparação entre os canais de venda",
+      "Aviso quando um anúncio começa a render menos",
       "+3-5 dias úteis no setup",
     ],
   },
@@ -165,7 +165,7 @@ export function Pacotes() {
             </div>
             <div className="flex-1">
               <h3 className="font-display text-2xl md:text-3xl text-ink tracking-tightish mb-3">
-                Conjunto completo (vitrine + agente + CRM + atribuição)
+                Conjunto completo (vitrine + agente + painel + rastreio)
               </h3>
               <p className="text-base text-ink-soft leading-relaxed text-pretty mb-4">
                 Quando você fecha tudo de uma vez, o desconto é real. A

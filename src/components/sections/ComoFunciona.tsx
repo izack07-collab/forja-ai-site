@@ -23,7 +23,7 @@ const steps = [
     n: "04",
     icon: BarChart3,
     title: "Você vê tudo num lugar só",
-    desc: "CRM próprio com receita, ticket médio, conversão, top produtos, e qual anúncio do Meta ou Google trouxe cada venda. Você sabe onde está dando lucro antes de subir o orçamento de tráfego.",
+    desc: "Um painel só seu com a receita do mês, o ticket médio, quais produtos mais vendem, e qual anúncio do Meta ou Google trouxe cada venda. Você sabe onde está dando lucro antes de colocar mais dinheiro em anúncio.",
   },
 ];
 
@@ -72,8 +72,8 @@ export function ComoFunciona() {
         <p className="text-sm text-ink-muted mt-8 text-center">
           Do briefing à loja no ar:{" "}
           <span className="text-ink font-medium">7 dias úteis</span> pra vitrine
-          base, mais 3-5 dias por peça adicionada (agente IA, atribuição, CRM
-          completo).
+          base, mais 3-5 dias por peça adicionada (agente IA, rastreio de
+          anúncios, painel completo).
         </p>
       </div>
     </section>

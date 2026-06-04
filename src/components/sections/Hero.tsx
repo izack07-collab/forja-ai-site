@@ -37,8 +37,8 @@ export function Hero() {
             className="lead mt-8 text-pretty md:text-xl animate-fade-up"
             style={{ animationDelay: "120ms" }}
           >
-            Vitrine online, consultor no WhatsApp, CRM com seu financeiro e o
-            controle de qual anúncio trouxe cada venda. <span className="font-display italic text-ink">Tudo montado pra você</span> por
+            Vitrine online, consultor no WhatsApp, um painel com seu
+            financeiro e o registro de qual anúncio trouxe cada venda. <span className="font-display italic text-ink">Tudo montado pra você</span> por
             quem já fez uma loja do zero. Uma operação só, não quatro
             fornecedores soltos.
           </p>

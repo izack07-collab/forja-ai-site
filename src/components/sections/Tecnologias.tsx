@@ -16,8 +16,8 @@ const tecnologias = [
   { icon: Brain, nome: "Claude · OpenAI", contexto: "Agente IA" },
   { icon: MessageCircle, nome: "Evolution API", contexto: "WhatsApp" },
   { icon: Workflow, nome: "n8n", contexto: "Automações" },
-  { icon: Megaphone, nome: "Meta Ads", contexto: "Atribuição" },
-  { icon: Search, nome: "Google Ads", contexto: "Atribuição" },
+  { icon: Megaphone, nome: "Meta Ads", contexto: "Anúncios" },
+  { icon: Search, nome: "Google Ads", contexto: "Anúncios" },
 ];
 
 export function Tecnologias() {

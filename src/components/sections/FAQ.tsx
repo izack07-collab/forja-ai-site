@@ -12,19 +12,19 @@ const perguntas = [
   },
   {
     q: "O CRM mostra de onde veio cada venda?",
-    a: "Sim, é justamente o 4º pilar. O CRM puxa dados do Meta Ads e Google Ads automaticamente via API, cruza com os rastreadores que a vitrine grava em cada acesso, e te mostra em português: 'Anúncio X do Instagram trouxe R$ 4.200 em vendas esse mês, custo de R$ 600, ROI 7x'. Você vê qual campanha tá dando retorno antes de subir o orçamento.",
+    a: "Sim, é justamente o 4º pilar. O painel puxa os dados do Meta Ads e do Google Ads sozinho, cruza com o que a vitrine registra em cada visita, e te mostra em português claro: 'Anúncio X do Instagram trouxe R$ 4.200 em vendas esse mês, custou R$ 600, rendeu 7 vezes'. Você vê qual anúncio tá dando retorno antes de colocar mais dinheiro.",
   },
   {
     q: "Funciona se eu já anuncio no Meta ou Google Ads?",
-    a: "Funciona melhor justamente nesse caso. Hoje você provavelmente vê os relatórios separados (um no Meta, outro no Google, vendas no Excel ou WhatsApp). O CRM unifica tudo num só painel e mostra a foto real: qual canal trouxe lucro, qual só consumiu orçamento. Se você não anuncia ainda, a atribuição já fica pronta pra quando começar.",
+    a: "Funciona melhor justamente nesse caso. Hoje você provavelmente vê os relatórios separados (um no Meta, outro no Google, vendas no Excel ou WhatsApp). O CRM unifica tudo num só painel e mostra a foto real: qual canal trouxe lucro, qual só consumiu orçamento. Se você não anuncia ainda, o rastreio de anúncios já fica pronto pra quando começar.",
   },
   {
     q: "Em quanto tempo fica pronto?",
-    a: "Vitrine sozinha: 7 dias úteis do briefing à loja no ar. Conjunto completo (vitrine + agente IA + CRM + atribuição): 12-15 dias úteis no total. Pegamos o briefing na segunda e em duas a três semanas sua operação inteira está atendendo. Tudo passa por aprovação sua antes de virar público.",
+    a: "Vitrine sozinha: 7 dias úteis do briefing à loja no ar. Conjunto completo (vitrine + agente IA + painel + rastreio de anúncios): 12-15 dias úteis no total. Pegamos o briefing na segunda e em duas a três semanas sua operação inteira está atendendo. Tudo passa por aprovação sua antes de virar público.",
   },
   {
     q: "E se eu não souber mexer no painel?",
-    a: "O painel admin é mobile-first e foi desenhado pra dona de loja, não pra desenvolvedor. Cadastrar produto, mudar foto, marcar pedido como enviado, ver o que vendeu hoje: tudo em 3 cliques no celular. Faço um vídeo de 15 minutos te mostrando como usar e fico disponível no WhatsApp na primeira semana pra qualquer dúvida.",
+    a: "O painel é feito pro celular e desenhado pra dona de loja, não pra programador. Cadastrar produto, mudar foto, marcar pedido como enviado, ver o que vendeu hoje: tudo em 3 toques no celular. Faço um vídeo de 15 minutos te mostrando como usar e fico disponível no WhatsApp na primeira semana pra qualquer dúvida.",
   },
   {
     q: "O agente IA é confiável? Não vai falar bobagem com cliente?",
@@ -40,11 +40,11 @@ const perguntas = [
   },
   {
     q: "Por que começar só pela vitrine sai mais caro depois?",
-    a: "Quando os 4 pilares são instalados juntos no setup inicial, eles já nascem conversando entre si: o agente IA usa o catálogo da vitrine, o CRM consome eventos do agente, a atribuição lê os dados da vitrine. Quando você adiciona uma peça depois, é trabalho extra de integração. Daí o orçamento por peça avulsa fica maior que a fatia equivalente do conjunto. Por isso o conjunto sai mais barato em valor absoluto.",
+    a: "Quando os 4 pilares são instalados juntos no setup inicial, eles já nascem conversando entre si: o agente IA usa o catálogo da vitrine, o painel usa as conversas do agente, o rastreio de anúncios lê os dados da vitrine. Quando você adiciona uma peça depois, é trabalho extra de integração. Daí o orçamento por peça avulsa fica maior que a fatia equivalente do conjunto. Por isso o conjunto sai mais barato em valor absoluto.",
   },
   {
     q: "Preciso saber mexer com Meta Ads ou Google Ads?",
-    a: "Você precisa saber criar campanha lá (ou contratar alguém que crie). O que eu entrego é a infraestrutura que mostra o que cada campanha está rendendo. Não rodo tráfego pra você. Entrego o painel que faz seu tráfego deixar de ser achismo. Se você ainda não anuncia, a atribuição fica armada pra quando começar.",
+    a: "Você precisa saber criar campanha lá (ou contratar alguém que crie). O que eu entrego é a infraestrutura que mostra o que cada campanha está rendendo. Não rodo tráfego pra você. Entrego o painel que faz seu tráfego deixar de ser achismo. Se você ainda não anuncia, o rastreio fica armado pra quando começar.",
   },
 ];
 
