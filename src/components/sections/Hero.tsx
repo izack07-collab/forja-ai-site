@@ -38,9 +38,9 @@ export function Hero() {
             style={{ animationDelay: "120ms" }}
           >
             Vitrine online, consultor no WhatsApp, um painel com seu
-            financeiro e o registro de qual anúncio trouxe cada venda. <span className="font-display italic text-ink">Tudo montado pra você</span> por
-            quem já fez uma loja do zero. Uma operação só, não quatro
-            fornecedores soltos.
+            financeiro e o registro de qual anúncio trouxe cada venda. Tudo
+            montado pra você por quem já fez uma loja do zero. Uma operação só,
+            não quatro fornecedores soltos.
           </p>
 
           <div
@@ -65,7 +65,7 @@ export function Hero() {
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-success" />
               <span className="text-xs text-ink-muted">
-                Case Ri Pratas no ar (prata 925, SP)
+                Case Ri Pratas no ar (prata 925, Salvador)
               </span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-line" />

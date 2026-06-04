@@ -34,7 +34,7 @@ export function Case() {
                   Ri Pratas
                 </p>
                 <p className="text-sm text-ink-muted uppercase tracking-wider2">
-                  Prata 925 artesanal · São Paulo
+                  Prata 925 artesanal · Salvador, BA
                 </p>
               </div>
 
