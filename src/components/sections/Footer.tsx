@@ -41,11 +41,6 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#comparativo" className="hover:text-bg transition-colors">
-                  vs Shopify / Nuvemshop
-                </a>
-              </li>
-              <li>
                 <a href="#case" className="hover:text-bg transition-colors">
                   Case Ri Pratas
                 </a>

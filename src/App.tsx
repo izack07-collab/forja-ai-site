@@ -4,7 +4,6 @@ import { Tecnologias } from "@/components/sections/Tecnologias";
 import { ComoFunciona } from "@/components/sections/ComoFunciona";
 import { Ecossistema } from "@/components/sections/Ecossistema";
 import { Pacotes } from "@/components/sections/Pacotes";
-import { Comparativo } from "@/components/sections/Comparativo";
 import { Case } from "@/components/sections/Case";
 import { FAQ } from "@/components/sections/FAQ";
 import { Contato } from "@/components/sections/Contato";
@@ -21,7 +20,6 @@ function App() {
         <ComoFunciona />
         <Ecossistema />
         <Pacotes />
-        <Comparativo />
         <Case />
         <FAQ />
         <Contato />

@@ -6,7 +6,6 @@ const links = [
   { href: "#como-funciona", label: "Como funciona" },
   { href: "#ecossistema", label: "Ecossistema" },
   { href: "#pacotes", label: "Pacotes" },
-  { href: "#comparativo", label: "vs Shopify" },
   { href: "#faq", label: "Perguntas" },
 ];
 
