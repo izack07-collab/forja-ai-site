@@ -139,12 +139,12 @@ export function Ecossistema() {
 
         <div className="mt-12 max-w-3xl p-6 rounded-md bg-bg-deep text-bg/85 border border-accent/30">
           <p className="text-sm leading-relaxed text-pretty">
-            <span className="text-accent font-medium">Importante:</span> os 4
-            pilares foram desenhados pra trabalhar juntos. O agente precisa
-            do catálogo da vitrine pra buscar peça. O painel precisa das
-            conversas do agente pra montar o funil de vendas. O rastreio de
-            anúncios precisa dos dados da vitrine. Se você compra só uma peça,
-            ela funciona, mas o ganho real aparece quando os 4 conversam.
+            <span className="text-accent font-medium">Junto, é isso que te deixa escalar.</span> A
+            vitrine vende, o agente atende 24 horas, o painel organiza tudo num
+            lugar e o rastreio mostra onde investir o próximo real, sem você ser
+            o gargalo de cada venda. Compra uma peça e ela já funciona; é com as
+            quatro conversando que a loja cresce sem depender de você o tempo
+            todo.
           </p>
         </div>
       </div>
