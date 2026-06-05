@@ -156,12 +156,6 @@ export function Pacotes() {
           ))}
         </div>
 
-        <p className="text-sm text-ink-muted mt-8 max-w-3xl">
-          Sem fidelidade: cancela quando quiser, com 30 dias de aviso, e leva
-          seus dados numa exportação organizada se mudar de ideia. A Forjage
-          não cobra comissão por venda, a sua loja é sua. O restante, alinhamos
-          diretamente com você no WhatsApp.
-        </p>
       </div>
     </section>
   );

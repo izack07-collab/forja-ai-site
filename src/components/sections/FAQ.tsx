@@ -31,10 +31,6 @@ const perguntas = [
     a: "Ele é treinado com o catálogo real da sua loja e com regras claras: nunca inventa preço, nunca inventa prazo de frete, nunca finge ser humano. Quando surge uma dúvida sobre a qual ele não tem certeza (algo muito específico, uma reclamação delicada, um defeito), ele aciona você imediatamente no WhatsApp para assumir. Foi calibrado em produção na Ri Pratas e atende com a voz da marca, não como um robô genérico.",
   },
   {
-    q: "Tem fidelidade ou contrato longo?",
-    a: "Não. Você pode cancelar a qualquer momento com 30 dias de aviso, sem multa. Entregamos seus dados em uma exportação organizada, caso queira migrar para outro lugar. A sua loja é sua, os seus dados são seus.",
-  },
-  {
     q: "Como funciona o pagamento do meu cliente final?",
     a: "Integração nativa com Asaas: cliente paga Pix com desconto (preferido), cartão parcelado em até 12x, ou boleto (se você ativar). Dinheiro cai direto na sua conta, sem intermediário cobrando taxa por venda. Frete vem do Melhor Envio com cotação automática em tempo real.",
   },
