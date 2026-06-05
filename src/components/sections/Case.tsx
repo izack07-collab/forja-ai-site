@@ -88,10 +88,10 @@ export function Case() {
               </div>
               <div>
                 <p className="font-display text-3xl md:text-4xl text-accent-deep italic">
-                  Sozinha
+                  Sozinho
                 </p>
                 <p className="text-xs text-ink-muted uppercase tracking-wider2 mt-1">
-                  a cliente compra
+                  o cliente compra
                   <br />
                   sem te chamar no privado
                 </p>
