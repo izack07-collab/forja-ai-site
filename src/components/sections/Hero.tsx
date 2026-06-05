@@ -21,7 +21,7 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="flex items-center gap-2 mb-8 animate-fade-in">
             <Sparkles className="h-4 w-4 text-accent-deep" strokeWidth={1.5} />
-            <span className="eyebrow">Forjage · Ecossistema completo pra sua loja escalar</span>
+            <span className="eyebrow">Forjage · Ecossistema completo para a sua loja escalar</span>
           </div>
 
           <h1 className="h-display font-medium italic text-balance leading-[1.02] md:text-display-xl animate-fade-up">
@@ -38,11 +38,11 @@ export function Hero() {
             style={{ animationDelay: "120ms" }}
           >
             Vitrine online, um consultor de IA atendendo no WhatsApp 24 horas,
-            um painel com seu financeiro e o registro de qual anúncio trouxe
-            cada venda. O agente segura o atendimento sozinho e te chama só no
-            que importa, já com a situação na mão pra você decidir. Tudo
-            montado por quem já fez uma loja do zero, numa operação só, não
-            quatro fornecedores soltos.
+            um painel com o seu financeiro e o registro de qual anúncio trouxe
+            cada venda. O agente cuida do atendimento sozinho e aciona você
+            apenas no que importa, já com a situação organizada para você
+            decidir. Tudo montado por quem já fez uma loja do zero, em uma
+            operação só, não quatro fornecedores soltos.
           </p>
 
           <div
@@ -54,9 +54,6 @@ export function Hero() {
                 Falar com a Forjage
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <a href="#ecossistema">Ver o que vem dentro</a>
             </Button>
           </div>
         </div>

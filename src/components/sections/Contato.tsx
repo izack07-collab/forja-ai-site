@@ -22,8 +22,8 @@ export function Contato() {
     const conta = String(data.get("conta") || "");
 
     const texto =
-      `Oi! Vim pelo site da Forjage.\n\n` +
-      `Me chamo ${nome}, sou da loja ${loja} (${cidade}).\n` +
+      `Olá! Vim pelo site da Forjage.\n\n` +
+      `Meu nome é ${nome}, sou da loja ${loja} (${cidade}).\n` +
       `Meu WhatsApp: ${wpp}.` +
       (conta ? `\n\n${conta}` : "");
 
@@ -49,14 +49,14 @@ export function Contato() {
               Falar com a Forjage
             </p>
             <h2 className="font-display font-light italic text-display-md text-bg text-balance">
-              Conta da sua loja
+              Conte sobre a sua loja
               <br />
               em 4 campos.
             </h2>
             <p className="text-lg text-bg/70 mt-6 leading-relaxed text-pretty">
-              A gente te responde no WhatsApp, geralmente no mesmo dia útil.
-              Cada projeto é acompanhado de perto, do primeiro contato à loja no
-              ar. É tudo montado sob medida pra sua operação, não pacote de
+              Respondemos no WhatsApp, geralmente no mesmo dia útil. Cada
+              projeto é acompanhado de perto, do primeiro contato à loja no ar.
+              É tudo montado sob medida para a sua operação, não um pacote de
               prateleira.
             </p>
 
@@ -163,7 +163,7 @@ export function Contato() {
 
               <p className="text-xs text-ink-muted leading-relaxed text-center">
                 Ao enviar, abre o WhatsApp com sua mensagem já pronta. É só
-                tocar em enviar. Seus dados ficam só com a gente.
+                tocar em enviar. Seus dados ficam apenas conosco.
               </p>
             </form>
           </div>

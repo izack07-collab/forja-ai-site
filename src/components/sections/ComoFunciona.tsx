@@ -5,7 +5,7 @@ const steps = [
     n: "01",
     icon: ShoppingBag,
     title: "Você mostra sua loja",
-    desc: "Manda o que vende, o tom da marca, as fotos. A gente cuida do resto: catálogo organizado, vitrine bonita, feita pro celular. Você não precisa aprender ferramenta nova.",
+    desc: "Você envia o que vende, o tom da marca e as fotos. Nós cuidamos do resto: catálogo organizado, vitrine bonita, feita para o celular. Você não precisa aprender ferramenta nova.",
   },
   {
     n: "02",
@@ -17,7 +17,7 @@ const steps = [
     n: "03",
     icon: MessageCircle,
     title: "Agente consultor entra em cena",
-    desc: "Agente de IA atende no WhatsApp 24/7, mostra a peça, calcula frete e gera o link pronto pra pagar. Vai além: recupera carrinho abandonado e faz follow-up de quem não respondeu. Escala pra você quando o assunto é dinheiro ou troca.",
+    desc: "O agente de IA atende no WhatsApp 24/7, mostra a peça, calcula o frete e gera o link pronto para pagamento. Vai além: recupera carrinho abandonado e faz follow-up de quem não respondeu. Encaminha para você quando o assunto é dinheiro ou troca.",
   },
   {
     n: "04",
@@ -38,9 +38,9 @@ export function ComoFunciona() {
             sua loja física vira operação digital completa.
           </h2>
           <p className="lead mt-6 text-pretty">
-            Sem você trocar de plataforma. Sem cliente baixar app. Sem você
-            virar madrugada respondendo "tem em outra cor?". E com número de
-            verdade pra decidir onde investir o próximo real de tráfego.
+            Sem trocar de plataforma. Sem o cliente baixar aplicativo. Sem você
+            passar a madrugada respondendo "tem em outra cor?". E com número de
+            verdade para decidir onde investir o próximo real em tráfego.
           </p>
         </div>
 
@@ -71,9 +71,9 @@ export function ComoFunciona() {
 
         <p className="text-sm text-ink-muted mt-8 text-center">
           Do briefing à loja no ar:{" "}
-          <span className="text-ink font-medium">7 dias úteis</span> pra vitrine
-          base, mais 3-5 dias por peça adicionada (agente IA, rastreio de
-          anúncios, painel completo).
+          <span className="text-ink font-medium">7 dias úteis</span> para a
+          vitrine base, mais 3 a 5 dias por peça adicionada (agente IA, rastreio
+          de anúncios, painel completo).
         </p>
       </div>
     </section>

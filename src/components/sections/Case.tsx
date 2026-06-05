@@ -34,7 +34,7 @@ export function Case() {
                   Ri Pratas
                 </p>
                 <p className="text-sm text-ink-muted uppercase tracking-wider2">
-                  Prata 925 artesanal · Salvador, BA
+                  Prata 925 · Salvador, BA
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ export function Case() {
                 <span className="font-display italic text-xl text-accent-deep">
                   A loja roda quase no automático.
                 </span>{" "}
-                Quem toca a Ri Pratas cuida de separar o pedido, postar e do
+                Quem opera a Ri Pratas cuida de separar o pedido, postar e do
                 administrativo. Mostrar a peça, tirar dúvida, calcular frete,
                 receber o pagamento e rastrear de onde veio cada venda: o
                 ecossistema faz.

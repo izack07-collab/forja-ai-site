@@ -14,9 +14,8 @@ export function Footer() {
               Forj<span className="text-accent">age</span>
             </a>
             <p className="text-sm mt-4 max-w-md leading-relaxed text-pretty">
-              Ecossistema de loja online empacotado pra lojas físicas
-              brasileiras que querem vender online sem virar refém de
-              plataforma.
+              A operação digital completa para lojas físicas brasileiras
+              que querem vender online sem ficar reféns de plataforma.
             </p>
           </div>
 

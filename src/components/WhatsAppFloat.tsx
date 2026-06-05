@@ -6,7 +6,7 @@ import { trackLead } from "@/lib/analytics";
 const WPP_DIRETO =
   "https://wa.me/5511985587684?text=" +
   encodeURIComponent(
-    "Oi! Vim pelo site da Forjage, quero saber mais sobre montar minha loja.",
+    "Olá! Vim pelo site da Forjage e gostaria de saber mais sobre montar a minha loja.",
   );
 
 /**
@@ -50,7 +50,7 @@ export function WhatsAppFloat() {
             </button>
           </div>
           <p className="text-sm text-ink-soft mb-4 leading-relaxed">
-            Conta da sua loja em 1 mensagem. Sem agendamento, sem
+            Conte sobre a sua loja em uma mensagem. Sem agendamento, sem
             questionário.
           </p>
           <div className="flex flex-col gap-2">

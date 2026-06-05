@@ -8,7 +8,7 @@ import {
 const perguntas = [
   {
     q: "Isso é tipo Shopify ou Nuvemshop?",
-    a: "Não. Shopify e Nuvemshop são plataformas SaaS onde você aluga um espaço pronto e adapta sua loja às regras delas. O que a Forjage monta pra você é um pacote sob medida: código próprio rodando na sua marca, integrado com Pix/cartão/frete brasileiros, consultor virtual no WhatsApp e o controle de qual anúncio trouxe cada venda, que essas plataformas não têm nativo. Você não fica refém de pacote nem paga taxa por venda extra.",
+    a: "Não. Shopify e Nuvemshop são plataformas SaaS onde você aluga um espaço pronto e adapta a sua loja às regras delas. O que a Forjage monta para você é um pacote sob medida: código próprio rodando na sua marca, integrado com Pix, cartão e frete brasileiros, consultor virtual no WhatsApp e o controle de qual anúncio trouxe cada venda, que essas plataformas não têm de forma nativa. Você não fica refém de pacote nem paga taxa por venda extra.",
   },
   {
     q: "O CRM mostra de onde veio cada venda?",
@@ -16,7 +16,7 @@ const perguntas = [
   },
   {
     q: "Funciona se eu já anuncio no Meta ou Google Ads?",
-    a: "Funciona melhor justamente nesse caso. Hoje você provavelmente vê os relatórios separados (um no Meta, outro no Google, vendas no Excel ou WhatsApp). O CRM unifica tudo num só painel e mostra a foto real: qual canal trouxe lucro, qual só consumiu orçamento. Se você não anuncia ainda, o rastreio de anúncios já fica pronto pra quando começar.",
+    a: "Funciona melhor justamente nesse caso. Hoje você provavelmente vê os relatórios separados (um no Meta, outro no Google, vendas no Excel ou WhatsApp). O CRM unifica tudo num só painel e mostra a foto real: qual canal trouxe lucro, qual só consumiu orçamento. Se você não anuncia ainda, o rastreio de anúncios já fica pronto para quando você começar.",
   },
   {
     q: "Em quanto tempo fica pronto?",
@@ -24,15 +24,15 @@ const perguntas = [
   },
   {
     q: "E se eu não souber mexer no painel?",
-    a: "O painel é feito pro celular e desenhado pra dona de loja, não pra programador. Cadastrar produto, mudar foto, marcar pedido como enviado, ver o que vendeu hoje: tudo em 3 toques no celular. A gente faz um vídeo de 15 minutos te mostrando como usar e fica disponível no WhatsApp na primeira semana pra qualquer dúvida.",
+    a: "O painel é feito para o celular e desenhado para a dona de loja, não para o programador. Cadastrar produto, mudar foto, marcar pedido como enviado, ver o que vendeu hoje: tudo em 3 toques no celular. Fazemos um vídeo de 15 minutos mostrando como usar e ficamos disponíveis no WhatsApp na primeira semana para qualquer dúvida.",
   },
   {
     q: "O agente IA é confiável? Não vai falar bobagem com cliente?",
-    a: "Ele é treinado com o catálogo real da sua loja e regras claras: nunca chuta preço, nunca chuta prazo de frete, nunca finge ser humano. Quando aparece dúvida que ele não tem certeza (algo muito específico, reclamação delicada, defeito), ele te chama imediatamente no WhatsApp pra você assumir. Foi calibrado em produção na Ri Pratas e atende com a voz da marca, não como bot genérico.",
+    a: "Ele é treinado com o catálogo real da sua loja e com regras claras: nunca inventa preço, nunca inventa prazo de frete, nunca finge ser humano. Quando surge uma dúvida sobre a qual ele não tem certeza (algo muito específico, uma reclamação delicada, um defeito), ele aciona você imediatamente no WhatsApp para assumir. Foi calibrado em produção na Ri Pratas e atende com a voz da marca, não como um robô genérico.",
   },
   {
     q: "Tem fidelidade ou contrato longo?",
-    a: "Não. Você pode cancelar a qualquer momento com 30 dias de aviso, sem multa. A gente entrega seus dados numa exportação organizada se quiser migrar pra outro lugar. Sua loja é sua, seus dados são seus.",
+    a: "Não. Você pode cancelar a qualquer momento com 30 dias de aviso, sem multa. Entregamos seus dados em uma exportação organizada, caso queira migrar para outro lugar. A sua loja é sua, os seus dados são seus.",
   },
   {
     q: "Como funciona o pagamento do meu cliente final?",
@@ -40,11 +40,11 @@ const perguntas = [
   },
   {
     q: "Vale instalar as peças juntas ou posso ir somando depois?",
-    a: "Pode somar depois, sem problema. Mas quando os 4 pilares entram juntos no setup inicial, já nascem conversando entre si: o agente IA usa o catálogo da vitrine, o painel usa as conversas do agente, o rastreio de anúncios lê os dados da vitrine. Adicionar uma peça depois dá um trabalho extra de integração que o setup junto já resolve de cara. Se você já sabe que vai querer mais de uma peça, instalar tudo de uma vez é o caminho mais redondo. A gente alinha o que faz sentido pra você no WhatsApp.",
+    a: "Pode somar depois, sem problema. Mas quando os 4 pilares entram juntos no setup inicial, já nascem conversando entre si: o agente IA usa o catálogo da vitrine, o painel usa as conversas do agente, o rastreio de anúncios lê os dados da vitrine. Adicionar uma peça depois exige um trabalho extra de integração que o setup conjunto já resolve de imediato. Se você já sabe que vai querer mais de uma peça, instalar tudo de uma vez é o caminho mais eficiente. Alinhamos o que faz sentido para você no WhatsApp.",
   },
   {
     q: "Preciso saber mexer com Meta Ads ou Google Ads?",
-    a: "Você precisa saber criar campanha lá (ou contratar alguém que crie). O que a Forjage entrega é a infraestrutura que mostra o que cada campanha está rendendo. A gente não roda tráfego pra você, entrega o painel que faz seu tráfego deixar de ser achismo. Se você ainda não anuncia, o rastreio fica armado pra quando começar.",
+    a: "Você precisa saber criar campanha lá (ou contratar alguém que crie). O que a Forjage entrega é a infraestrutura que mostra o que cada campanha está rendendo. Não gerenciamos o seu tráfego; entregamos o painel que faz o seu tráfego deixar de depender de suposição. Se você ainda não anuncia, o rastreio fica pronto para quando você começar.",
   },
 ];
 

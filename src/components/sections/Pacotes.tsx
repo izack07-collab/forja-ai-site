@@ -16,8 +16,8 @@ const pecas: Peca[] = [
       "Frete automático (Melhor Envio)",
       "Rastreio de qual anúncio vende",
       "Domínio próprio (sua marca no ar)",
-      "Feita pro celular",
-      "7 dias úteis pra ficar no ar",
+      "Feita para o celular",
+      "7 dias úteis para ficar no ar",
     ],
   },
   {
@@ -26,9 +26,9 @@ const pecas: Peca[] = [
     inclui: [
       "Atendimento texto + áudio + foto",
       "Busca produto + foto + frete + link carrinho",
-      "Recupera carrinho abandonado pra fechar a venda",
+      "Recupera carrinho abandonado para fechar a venda",
       "Follow-up automático de quem não respondeu",
-      "Escalação automática pra você em emergência",
+      "Encaminhamento automático para você em emergência",
       "Memória por cliente",
       "+3-5 dias úteis no setup",
     ],
@@ -115,7 +115,7 @@ export function Pacotes() {
         </div>
 
         {/* Peças individuais — niveladas */}
-        <p className="eyebrow mb-6">Ou pegue só as peças que quiser</p>
+        <p className="eyebrow mb-6">Ou escolha apenas as peças que quiser</p>
         <div className="grid md:grid-cols-2 gap-6">
           {pecas.map((p) => (
             <article
@@ -159,8 +159,8 @@ export function Pacotes() {
         <p className="text-sm text-ink-muted mt-8 max-w-3xl">
           Sem fidelidade: cancela quando quiser, com 30 dias de aviso, e leva
           seus dados numa exportação organizada se mudar de ideia. A Forjage
-          não cobra comissão por venda, sua loja é sua. O resto a gente alinha
-          direto com você no WhatsApp.
+          não cobra comissão por venda, a sua loja é sua. O restante, alinhamos
+          diretamente com você no WhatsApp.
         </p>
       </div>
     </section>
