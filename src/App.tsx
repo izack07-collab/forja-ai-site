@@ -9,6 +9,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import { Contato } from "@/components/sections/Contato";
 import { Footer } from "@/components/sections/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { Divider } from "@/components/ui/Divider";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         <ComoFunciona />
         <Ecossistema />
         <Case />
+        <Divider />
         <Pacotes />
+        <Divider />
         <FAQ />
         <Contato />
       </main>

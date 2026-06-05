@@ -1,4 +1,5 @@
-import { Quote, Sparkles } from "lucide-react";
+import { Quote } from "lucide-react";
+import { BrowserFrame } from "@/components/ui/BrowserFrame";
 
 export function Case() {
   return (
@@ -13,39 +14,33 @@ export function Case() {
         </div>
 
         <div className="max-w-5xl grid md:grid-cols-12 gap-8 md:gap-12 items-start">
-          {/* Coluna visual */}
+          {/* Coluna visual — vitrine real no ar */}
           <div className="md:col-span-5">
-            <div className="aspect-[4/5] rounded-lg overflow-hidden bg-gradient-to-br from-bg-warm via-accent-wash to-bg-warm border border-line shadow-soft relative flex flex-col justify-between p-8">
-              {/* Live badge */}
-              <div className="flex items-center gap-2">
+            <div className="relative">
+              {/* Selo flutuante — no ar */}
+              <div className="absolute -top-3 left-4 z-10 flex items-center gap-2 rounded-full border border-line bg-bg px-3 py-1.5 shadow-soft">
                 <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
-                <span className="text-xs text-ink-muted uppercase tracking-wider2">
+                <span className="text-[11px] text-ink-muted uppercase tracking-wider2">
                   No ar desde 19/05/2026
                 </span>
               </div>
 
-              {/* Centro — branding */}
-              <div className="text-center">
-                <Sparkles
-                  className="h-10 w-10 mx-auto mb-4 text-accent-deep"
-                  strokeWidth={1.25}
-                />
-                <p className="font-display italic text-4xl text-ink mb-1">
-                  Ri Pratas
-                </p>
-                <p className="text-sm text-ink-muted uppercase tracking-wider2">
-                  Prata 925 · Salvador, BA
-                </p>
-              </div>
+              <BrowserFrame
+                src="/images/vitrine-catalogo.webp"
+                alt="Catálogo da Ri Pratas no ar: peças de prata 925 com filtros, busca e preços"
+                url="ripratas.com.br/catalogo"
+                width={1280}
+                height={800}
+              />
 
               {/* Rodapé — link vivo */}
               <a
                 href="https://ripratas.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between rounded-md border border-line bg-bg/60 px-4 py-3 text-xs text-ink-muted hover:border-accent/50 hover:text-ink-soft transition-colors"
+                className="mt-3 flex items-center justify-between rounded-md border border-line bg-bg px-4 py-3 text-xs text-ink-muted hover:border-accent/50 hover:text-ink-soft transition-colors"
               >
-                <span>ripratas.com.br</span>
+                <span>Ver a loja no ar em ripratas.com.br</span>
                 <span className="text-accent-deep">↗</span>
               </a>
             </div>
