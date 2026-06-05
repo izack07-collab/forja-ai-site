@@ -52,13 +52,16 @@ export function FAQ() {
           <div className="md:col-span-4">
             <p className="eyebrow mb-4">Perguntas</p>
             <h2 className="h-section text-balance">
-              Tira a dúvida
+              Tire suas dúvidas
               <br />
-              <span className="italic font-display">antes da call</span>.
+              <span className="italic font-display">
+                antes de entrar em contato
+              </span>
+              .
             </h2>
             <p className="body-prose mt-6 text-pretty">
-              Se ficar algo de fora, manda pelo formulário aqui embaixo. Te
-              respondo direto no WhatsApp em até 24h.
+              Se ficar algo de fora, envie pelo formulário logo abaixo.
+              Respondemos direto no WhatsApp em até 24 horas.
             </p>
           </div>
 
