@@ -65,10 +65,6 @@ export function MiniCases() {
                 </span>
               </figcaption>
             </figure>
-
-            <p className="mt-3 text-center text-[11px] text-ink-muted">
-              Conversa real do atendimento. Nome da cliente e marca anonimizados.
-            </p>
           </div>
 
           {/* Coluna texto — case */}

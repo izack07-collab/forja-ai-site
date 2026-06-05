@@ -175,11 +175,6 @@ export function Ecossistema() {
               height={720}
             />
           </div>
-
-          <p className="mt-3 text-xs text-ink-muted">
-            Painel real da Ri Pratas, com os números zerados para a
-            demonstração.
-          </p>
         </div>
 
         <div className="mt-12 max-w-3xl p-6 rounded-md bg-bg-deep text-bg/85 border border-accent/30">
