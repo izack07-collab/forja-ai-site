@@ -5,13 +5,13 @@ import {
   Target,
   Check,
 } from "lucide-react";
+import { BrowserFrame } from "@/components/ui/BrowserFrame";
 
 const pilares = [
   {
     icon: ShoppingBag,
     eyebrow: "Pilar 1",
     nome: "Vitrine pública",
-    img: "/images/vitrine-catalogo.webp",
     desc: "A loja online de verdade que sua cliente abre, escolhe a peça, compra e paga sozinha, sem te chamar no privado.",
     features: [
       "Catálogo com filtros, busca e categorias",
@@ -28,7 +28,6 @@ const pilares = [
     icon: MessageCircle,
     eyebrow: "Pilar 2",
     nome: "Agente IA no WhatsApp",
-    img: "/images/agente-fecho.webp",
     desc: "Consultor virtual treinado com seu catálogo real e a sua voz de marca. Atende 24/7, encaminha para o checkout e ainda vai atrás de quem não fechou: recupera carrinho abandonado e faz follow-up sozinho.",
     features: [
       "Busca peça no seu estoque real (não inventa preço nem disponibilidade)",
@@ -49,7 +48,6 @@ const pilares = [
     icon: LayoutDashboard,
     eyebrow: "Pilar 3",
     nome: "CRM próprio",
-    img: "/images/crm-dashboard.webp",
     desc: "Painel que substitui Shopify, Excel, agenda e WhatsApp Business, tudo no mesmo lugar, com a sua cara.",
     features: [
       "Painel com receita do mês, ticket médio, quantos viraram venda e contatos novos",
@@ -67,7 +65,6 @@ const pilares = [
     icon: Target,
     eyebrow: "Pilar 4 · diferencial real",
     nome: "De onde veio cada venda + financeiro",
-    img: "/images/crm-campanhas.webp",
     desc: "Você sabe qual anúncio do Meta ou Google trouxe cada venda. Acaba o 'acho que essa campanha tá vendendo'.",
     features: [
       "Conexão automática com Meta Ads (Facebook + Instagram) e Google Ads",
@@ -104,52 +101,85 @@ export function Ecossistema() {
           {pilares.map((p) => (
             <article
               key={p.nome}
-              className="bg-bg rounded-xl border border-line shadow-soft hover:shadow-medium hover:-translate-y-0.5 transition-all flex flex-col overflow-hidden"
+              className="bg-bg rounded-xl border border-line shadow-soft hover:shadow-medium hover:-translate-y-0.5 transition-all p-8 md:p-10 flex flex-col gap-6"
             >
-              {/* Prévia real do produto */}
-              <div className="h-44 md:h-48 overflow-hidden border-b border-line bg-bg-warm">
-                <img
-                  src={p.img}
-                  alt={`Prévia da ${p.nome} no ar`}
-                  loading="lazy"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
+              <header className="flex items-start gap-4">
+                <div className="p-3 rounded-lg bg-accent-wash text-accent-deep shrink-0">
+                  <p.icon className="h-6 w-6" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <p className="text-xs font-medium uppercase tracking-wider2 text-accent-deep mb-1">
+                    {p.eyebrow}
+                  </p>
+                  <h3 className="font-display text-2xl md:text-3xl text-ink tracking-tightish mb-2">
+                    {p.nome}
+                  </h3>
+                  <p className="text-sm text-ink-soft leading-relaxed text-pretty">
+                    {p.desc}
+                  </p>
+                </div>
+              </header>
 
-              <div className="p-8 md:p-10 flex flex-col gap-6">
-                <header className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-accent-wash text-accent-deep shrink-0">
-                    <p.icon className="h-6 w-6" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium uppercase tracking-wider2 text-accent-deep mb-1">
-                      {p.eyebrow}
-                    </p>
-                    <h3 className="font-display text-2xl md:text-3xl text-ink tracking-tightish mb-2">
-                      {p.nome}
-                    </h3>
-                    <p className="text-sm text-ink-soft leading-relaxed text-pretty">
-                      {p.desc}
-                    </p>
-                  </div>
-                </header>
-
-                <ul className="space-y-2.5 border-t border-line pt-6">
-                  {p.features.map((f) => (
-                    <li key={f} className="flex items-start gap-3">
-                      <Check
-                        className="h-4 w-4 mt-0.5 text-accent-deep shrink-0"
-                        strokeWidth={2.5}
-                      />
-                      <span className="text-sm text-ink-soft leading-relaxed">
-                        {f}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <ul className="space-y-2.5 border-t border-line pt-6">
+                {p.features.map((f) => (
+                  <li key={f} className="flex items-start gap-3">
+                    <Check
+                      className="h-4 w-4 mt-0.5 text-accent-deep shrink-0"
+                      strokeWidth={2.5}
+                    />
+                    <span className="text-sm text-ink-soft leading-relaxed">
+                      {f}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </article>
           ))}
+        </div>
+
+        {/* Showcase do painel real */}
+        <div className="mt-16 md:mt-20">
+          <div className="max-w-3xl mb-8 md:mb-10">
+            <p className="eyebrow mb-3">O painel por dentro</p>
+            <h3 className="font-display text-2xl md:text-3xl text-ink tracking-tightish text-balance">
+              O mesmo painel que a{" "}
+              <span className="italic">Ri Pratas</span> abre todo dia.
+            </h3>
+            <p className="body-prose mt-4 text-pretty">
+              Receita, funil de conversão, pedidos e o retorno de cada anúncio,
+              num lugar só. Feito para abrir no celular, entre um cliente e
+              outro.
+            </p>
+          </div>
+
+          <BrowserFrame
+            src="/images/crm-dashboard.webp"
+            alt="Painel do CRM da Ri Pratas: receita, ticket médio, funil de conversão e top produtos"
+            url="painel.sualoja.com.br"
+            width={1280}
+            height={720}
+            className="max-w-4xl"
+          />
+
+          <div className="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-4xl mt-4 md:mt-6">
+            <BrowserFrame
+              src="/images/crm-campanhas.webp"
+              alt="Tela de campanhas: gasto, ROAS, CAC e sincronização com Meta Ads"
+              width={1280}
+              height={720}
+            />
+            <BrowserFrame
+              src="/images/crm-atribuicao.webp"
+              alt="Tela de atribuição: de qual anúncio veio cada venda e o retorno por canal"
+              width={1280}
+              height={720}
+            />
+          </div>
+
+          <p className="mt-3 text-xs text-ink-muted">
+            Painel real da Ri Pratas, com os números zerados para a
+            demonstração.
+          </p>
         </div>
 
         <div className="mt-12 max-w-3xl p-6 rounded-md bg-bg-deep text-bg/85 border border-accent/30">
