@@ -11,6 +11,7 @@ const pilares = [
     icon: ShoppingBag,
     eyebrow: "Pilar 1",
     nome: "Vitrine pública",
+    img: "/images/vitrine-catalogo.webp",
     desc: "A loja online de verdade que sua cliente abre, escolhe a peça, compra e paga sozinha, sem te chamar no privado.",
     features: [
       "Catálogo com filtros, busca e categorias",
@@ -27,6 +28,7 @@ const pilares = [
     icon: MessageCircle,
     eyebrow: "Pilar 2",
     nome: "Agente IA no WhatsApp",
+    img: "/images/agente-fecho.webp",
     desc: "Consultor virtual treinado com seu catálogo real e a sua voz de marca. Atende 24/7, encaminha para o checkout e ainda vai atrás de quem não fechou: recupera carrinho abandonado e faz follow-up sozinho.",
     features: [
       "Busca peça no seu estoque real (não inventa preço nem disponibilidade)",
@@ -47,6 +49,7 @@ const pilares = [
     icon: LayoutDashboard,
     eyebrow: "Pilar 3",
     nome: "CRM próprio",
+    img: "/images/crm-dashboard.webp",
     desc: "Painel que substitui Shopify, Excel, agenda e WhatsApp Business, tudo no mesmo lugar, com a sua cara.",
     features: [
       "Painel com receita do mês, ticket médio, quantos viraram venda e contatos novos",
@@ -64,6 +67,7 @@ const pilares = [
     icon: Target,
     eyebrow: "Pilar 4 · diferencial real",
     nome: "De onde veio cada venda + financeiro",
+    img: "/images/crm-campanhas.webp",
     desc: "Você sabe qual anúncio do Meta ou Google trouxe cada venda. Acaba o 'acho que essa campanha tá vendendo'.",
     features: [
       "Conexão automática com Meta Ads (Facebook + Instagram) e Google Ads",
@@ -100,46 +104,60 @@ export function Ecossistema() {
           {pilares.map((p) => (
             <article
               key={p.nome}
-              className="bg-bg rounded-xl border border-line shadow-soft hover:shadow-medium transition-all p-8 md:p-10 flex flex-col gap-6"
+              className="bg-bg rounded-xl border border-line shadow-soft hover:shadow-medium hover:-translate-y-0.5 transition-all flex flex-col overflow-hidden"
             >
-              <header className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-accent-wash text-accent-deep shrink-0">
-                  <p.icon className="h-6 w-6" strokeWidth={1.5} />
-                </div>
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-wider2 text-accent-deep mb-1">
-                    {p.eyebrow}
-                  </p>
-                  <h3 className="font-display text-2xl md:text-3xl text-ink tracking-tightish mb-2">
-                    {p.nome}
-                  </h3>
-                  <p className="text-sm text-ink-soft leading-relaxed text-pretty">
-                    {p.desc}
-                  </p>
-                </div>
-              </header>
+              {/* Prévia real do produto */}
+              <div className="h-44 md:h-48 overflow-hidden border-b border-line bg-bg-warm">
+                <img
+                  src={p.img}
+                  alt={`Prévia da ${p.nome} no ar`}
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
 
-              <ul className="space-y-2.5 border-t border-line pt-6">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-3">
-                    <Check
-                      className="h-4 w-4 mt-0.5 text-accent-deep shrink-0"
-                      strokeWidth={2.5}
-                    />
-                    <span className="text-sm text-ink-soft leading-relaxed">
-                      {f}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <div className="p-8 md:p-10 flex flex-col gap-6">
+                <header className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-accent-wash text-accent-deep shrink-0">
+                    <p.icon className="h-6 w-6" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <p className="text-xs font-medium uppercase tracking-wider2 text-accent-deep mb-1">
+                      {p.eyebrow}
+                    </p>
+                    <h3 className="font-display text-2xl md:text-3xl text-ink tracking-tightish mb-2">
+                      {p.nome}
+                    </h3>
+                    <p className="text-sm text-ink-soft leading-relaxed text-pretty">
+                      {p.desc}
+                    </p>
+                  </div>
+                </header>
+
+                <ul className="space-y-2.5 border-t border-line pt-6">
+                  {p.features.map((f) => (
+                    <li key={f} className="flex items-start gap-3">
+                      <Check
+                        className="h-4 w-4 mt-0.5 text-accent-deep shrink-0"
+                        strokeWidth={2.5}
+                      />
+                      <span className="text-sm text-ink-soft leading-relaxed">
+                        {f}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </article>
           ))}
         </div>
 
         <div className="mt-12 max-w-3xl p-6 rounded-md bg-bg-deep text-bg/85 border border-accent/30">
           <p className="text-sm leading-relaxed text-pretty">
-            <span className="text-accent font-medium">Junto, é isso que te deixa escalar.</span> A
-            vitrine vende, o agente atende 24 horas, o painel organiza tudo num
+            <span className="text-accent font-medium">
+              Junto, é isso que te deixa escalar.
+            </span>{" "}
+            A vitrine vende, o agente atende 24 horas, o painel organiza tudo num
             lugar e o rastreio mostra onde investir o próximo real, sem você ser
             o gargalo de cada venda. Compra uma peça e ela já funciona; é com as
             quatro conversando que a loja cresce sem depender de você o tempo
