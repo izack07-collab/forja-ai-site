@@ -1,8 +1,12 @@
+import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 interface PhoneFrameProps {
-  src: string;
-  alt: string;
+  /** Imagem (screenshot real). Ignorada se `children` for passado. */
+  src?: string;
+  alt?: string;
+  /** Conteúdo customizado dentro da tela (ex.: mock de conversa). Tem prioridade sobre `src`. */
+  children?: ReactNode;
   className?: string;
   imgClassName?: string;
   loading?: "lazy" | "eager";
@@ -11,12 +15,13 @@ interface PhoneFrameProps {
 }
 
 /**
- * Moldura de celular em CSS para a vitrine mobile e a conversa do agente.
- * Bezel grafite fino, cantos bem arredondados, alto-falante sutil.
+ * Moldura de celular em CSS para a vitrine mobile, a conversa do agente
+ * ou um mock de tela. Bezel grafite fino, cantos arredondados, alto-falante sutil.
  */
 export function PhoneFrame({
   src,
   alt,
+  children,
   className,
   imgClassName,
   loading = "lazy",
@@ -35,14 +40,18 @@ export function PhoneFrame({
         className="absolute left-1/2 top-2 z-10 h-1 w-10 -translate-x-1/2 rounded-full bg-bg/25"
       />
       <div className="overflow-hidden rounded-[1.4rem]">
-        <img
-          src={src}
-          alt={alt}
-          loading={loading}
-          width={width}
-          height={height}
-          className={cn("block w-full", imgClassName)}
-        />
+        {children ? (
+          children
+        ) : (
+          <img
+            src={src}
+            alt={alt ?? ""}
+            loading={loading}
+            width={width}
+            height={height}
+            className={cn("block w-full", imgClassName)}
+          />
+        )}
       </div>
     </figure>
   );

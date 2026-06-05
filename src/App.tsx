@@ -5,6 +5,7 @@ import { ComoFunciona } from "@/components/sections/ComoFunciona";
 import { Ecossistema } from "@/components/sections/Ecossistema";
 import { Pacotes } from "@/components/sections/Pacotes";
 import { Case } from "@/components/sections/Case";
+import { MiniCases } from "@/components/sections/MiniCases";
 import { FAQ } from "@/components/sections/FAQ";
 import { Contato } from "@/components/sections/Contato";
 import { Footer } from "@/components/sections/Footer";
@@ -21,7 +22,7 @@ function App() {
         <ComoFunciona />
         <Ecossistema />
         <Case />
-        <Divider />
+        <MiniCases />
         <Pacotes />
         <Divider />
         <FAQ />
