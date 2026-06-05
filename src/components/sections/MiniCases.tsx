@@ -7,72 +7,6 @@ const metricas = [
   { icon: Repeat, valor: "25 a 30x", label: "de retorno sobre o custo" },
 ];
 
-/**
- * Conversa MOCK (exemplo ilustrativo). Placeholder até o Isaac enviar o print
- * real do agente da Milena com dados anonimizados, que substitui este bloco.
- * Tom natural de propósito (atendimento conversacional no WhatsApp).
- */
-const conversa = [
-  {
-    de: "agente",
-    txt: "Oi, Marina! Vi que você começou a garantir sua vaga e parou no pagamento. Ficou alguma dúvida? 😊",
-  },
-  { de: "cliente", txt: "Oi! Consigo parcelar?" },
-  {
-    de: "agente",
-    txt: "Consegue sim 💛 Até 12x no cartão, ou no Pix com desconto. Quer que eu já te mande o link?",
-  },
-  { de: "cliente", txt: "Quero!" },
-  { de: "agente", txt: "Prontinho! É só finalizar por aqui 👉" },
-] as const;
-
-function MockConversa() {
-  return (
-    <div className="flex flex-col bg-bg-warm">
-      {/* Topo do chat */}
-      <div className="flex items-center gap-3 bg-bg-deep px-4 py-3">
-        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/20 text-accent-soft">
-          <Bot className="h-4 w-4" strokeWidth={1.75} />
-        </div>
-        <div className="leading-tight">
-          <p className="text-sm font-medium text-bg">Milena</p>
-          <p className="text-[10px] text-bg/60">consultora · online agora</p>
-        </div>
-      </div>
-
-      {/* Bolhas */}
-      <div className="flex flex-col gap-2 px-3 py-4">
-        {conversa.map((m, i) => (
-          <div
-            key={i}
-            className={
-              m.de === "cliente" ? "flex justify-end" : "flex justify-start"
-            }
-          >
-            <p
-              className={
-                m.de === "cliente"
-                  ? "max-w-[80%] rounded-2xl rounded-tr-sm bg-[#E4EFE0] px-3 py-2 text-[12px] leading-snug text-ink shadow-sm"
-                  : "max-w-[80%] rounded-2xl rounded-tl-sm bg-bg px-3 py-2 text-[12px] leading-snug text-ink shadow-sm"
-              }
-            >
-              {m.txt}
-            </p>
-          </div>
-        ))}
-
-        {/* Chip de venda recuperada */}
-        <div className="mt-1 flex justify-center">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-success/12 px-3 py-1 text-[10px] font-medium uppercase tracking-wider2 text-success">
-            <Check className="h-3 w-3" strokeWidth={3} />
-            Compra finalizada no checkout
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function MiniCases() {
   return (
     <section id="outros-cases" className="section surface-warm">
@@ -91,31 +25,65 @@ export function MiniCases() {
           </p>
         </div>
 
-        <div className="max-w-5xl grid md:grid-cols-12 gap-8 md:gap-12 items-center">
-          {/* Coluna visual — conversa do agente (mock) */}
-          <div className="md:col-span-5">
-            <div className="mx-auto max-w-[280px]">
-              <PhoneFrame>
-                <MockConversa />
-              </PhoneFrame>
-              <p className="mt-3 text-center text-[11px] text-ink-muted">
-                Exemplo ilustrativo de uma recuperação pelo agente.
-              </p>
+        <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+          {/* Coluna visual — conversa real (anonimizada) */}
+          <div className="md:col-span-7">
+            <div className="flex justify-center gap-4 sm:gap-6">
+              <PhoneFrame
+                src="/images/agente-conv1.webp"
+                alt="Atendimento do agente recuperando uma venda no WhatsApp, parte 1"
+                width={500}
+                height={872}
+                className="w-1/2 max-w-[230px]"
+              />
+              <PhoneFrame
+                src="/images/agente-conv2.webp"
+                alt="Atendimento do agente contornando a objeção da cliente, parte 2"
+                width={500}
+                height={872}
+                className="w-1/2 max-w-[230px]"
+              />
             </div>
+
+            {/* Fecho da venda */}
+            <figure className="mx-auto mt-5 max-w-[400px] overflow-hidden rounded-xl border border-line bg-bg shadow-soft">
+              <img
+                src="/images/agente-fecho.webp"
+                alt="Cliente confirmando o pagamento: Já fiz, obrigada"
+                width={500}
+                height={278}
+                loading="lazy"
+                className="block w-full"
+              />
+              <figcaption className="flex items-center gap-2 border-t border-line px-4 py-2.5">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-success/12 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider2 text-success">
+                  <Check className="h-3 w-3" strokeWidth={3} />
+                  Venda recuperada
+                </span>
+                <span className="text-[11px] text-ink-muted">
+                  Cliente fechou pelo checkout, sozinha.
+                </span>
+              </figcaption>
+            </figure>
+
+            <p className="mt-3 text-center text-[11px] text-ink-muted">
+              Conversa real do atendimento. Nome da cliente e marca anonimizados.
+            </p>
           </div>
 
           {/* Coluna texto — case */}
-          <div className="md:col-span-7 flex flex-col gap-6">
+          <div className="md:col-span-5 flex flex-col gap-6">
             <header className="flex items-start gap-4">
               <div className="p-3 rounded-lg bg-accent-wash text-accent-deep shrink-0">
                 <Bot className="h-6 w-6" strokeWidth={1.5} />
               </div>
               <div>
                 <h3 className="font-display text-2xl md:text-3xl text-ink tracking-tightish mb-1">
-                  Milena · MVM Creators
+                  Milena, recuperação de vendas
                 </h3>
                 <p className="text-sm text-ink-soft">
-                  Agente de recuperação de carrinho via WhatsApp
+                  Agente de carrinho abandonado no WhatsApp, para um negócio de
+                  cursos online
                 </p>
                 <p className="text-xs text-ink-muted uppercase tracking-wider2 mt-1">
                   No ar desde dezembro de 2025
