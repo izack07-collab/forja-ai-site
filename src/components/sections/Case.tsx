@@ -9,7 +9,7 @@ export function Case() {
           <p className="eyebrow mb-4">Case vivo</p>
           <h2 className="h-section text-balance">
             A <span className="italic font-display">Ri Pratas</span> está no ar.
-            O seu jeito pode estar também.
+            O seu site pode estar também.
           </h2>
         </div>
 

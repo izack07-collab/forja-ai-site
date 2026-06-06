@@ -19,9 +19,9 @@ export function MiniCases() {
             recupera venda em outra operação, há mais tempo.
           </h2>
           <p className="lead mt-6 text-pretty">
-            A Ri Pratas é a vitrine completa. O agente que vai para a sua loja,
-            porém, já tem um irmão em produção há mais tempo, em outro contexto,
-            com número real para mostrar.
+            A Ri Pratas é a vitrine completa. O agente que entra na sua loja não
+            é protótipo: já opera em outra empresa, com resultado financeiro
+            comprovado.
           </p>
         </div>
 

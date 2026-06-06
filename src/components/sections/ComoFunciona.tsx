@@ -5,19 +5,19 @@ const steps = [
     n: "01",
     icon: ShoppingBag,
     title: "Você mostra sua loja",
-    desc: "Você envia o que vende, o tom da marca e as fotos. Nós cuidamos do resto: catálogo organizado, vitrine bonita, feita para o celular. Você não precisa aprender ferramenta nova.",
+    desc: "Você envia o que vende, a identidade da marca e as fotos. A Forjage cria o seu site, organiza o catálogo e personaliza tudo com a sua marca, feito para o celular. Você não precisa aprender ferramenta nova.",
   },
   {
     n: "02",
     icon: Wallet,
-    title: "A gente conecta pagamento e frete",
-    desc: "Pix com desconto, cartão parcelado, Melhor Envio integrado. Cliente compra direto sem te chamar no WhatsApp pedindo Pix manual ou foto de modelo.",
+    title: "Integramos pagamento e frete",
+    desc: "Integramos o checkout de pagamento (Pix com desconto e cartão parcelado em até 12x) e a API do Melhor Envio para o cálculo do frete. O cliente compra direto na loja, sem te chamar no WhatsApp pedindo Pix manual.",
   },
   {
     n: "03",
     icon: MessageCircle,
     title: "Agente consultor entra em cena",
-    desc: "O agente de IA atende no WhatsApp 24/7, mostra a peça, calcula o frete e gera o link pronto para pagamento. Vai além: recupera carrinho abandonado e faz follow-up de quem não respondeu. Encaminha para você quando o assunto é dinheiro ou troca.",
+    desc: "O agente de IA atende no WhatsApp 24/7 como consultor: apresenta o produto, tira dúvidas e contorna objeções. Vai além, recupera carrinho abandonado e faz follow-up de quem não respondeu. E encaminha para você quando o assunto é dinheiro, troca ou algo delicado.",
   },
   {
     n: "04",

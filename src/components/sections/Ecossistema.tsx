@@ -184,9 +184,8 @@ export function Ecossistema() {
             </span>{" "}
             A vitrine vende, o agente atende 24 horas, o painel organiza tudo num
             lugar e o rastreio mostra onde investir o próximo real, sem você ser
-            o gargalo de cada venda. Compra uma peça e ela já funciona; é com as
-            quatro conversando que a loja cresce sem depender de você o tempo
-            todo.
+            o gargalo de cada venda. Cada peça funciona sozinha; é com as quatro
+            conversando que a loja cresce sem depender de você o tempo todo.
           </p>
         </div>
       </div>

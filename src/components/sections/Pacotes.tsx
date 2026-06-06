@@ -1,59 +1,34 @@
-import { Check, Sparkles, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type Peca = {
   nome: string;
   resumo: string;
-  inclui: string[];
+  prazo: string;
 };
 
 const pecas: Peca[] = [
   {
     nome: "Vitrine pública",
-    resumo: "A loja online de verdade: catálogo, checkout Pix/cartão, no seu domínio.",
-    inclui: [
-      "Catálogo + pagamento Pix/cartão",
-      "Frete automático (Melhor Envio)",
-      "Rastreio de qual anúncio vende",
-      "Domínio próprio (sua marca no ar)",
-      "Feita para o celular",
-      "7 dias úteis para ficar no ar",
-    ],
+    resumo:
+      "A loja online de verdade: catálogo, checkout Pix/cartão, no seu domínio.",
+    prazo: "7 dias úteis para ficar no ar",
   },
   {
     nome: "Agente IA no WhatsApp",
-    resumo: "Consultor virtual 24/7 que atende, recupera carrinho e faz follow-up.",
-    inclui: [
-      "Atendimento texto + áudio + foto",
-      "Busca produto + foto + frete + link carrinho",
-      "Recupera carrinho abandonado para fechar a venda",
-      "Follow-up automático de quem não respondeu",
-      "Encaminhamento automático para você em emergência",
-      "Memória por cliente",
-      "+3-5 dias úteis no setup",
-    ],
+    resumo:
+      "Consultor virtual 24/7 que atende, recupera carrinho e faz follow-up.",
+    prazo: "+3 a 5 dias úteis no setup",
   },
   {
     nome: "CRM próprio",
     resumo: "Painel com receita, ticket médio, funil, clientes e pedidos.",
-    inclui: [
-      "Painel com seus números, comparado ao mês passado",
-      "Quadro visual dos pedidos",
-      "Cadastro de cliente com histórico",
-      "Carrinhos abandonados",
-      "+3-5 dias úteis no setup",
-    ],
+    prazo: "+3 a 5 dias úteis no setup",
   },
   {
     nome: "De onde vêm suas vendas",
     resumo: "Conecta Meta Ads e Google Ads. Mostra qual anúncio vendeu.",
-    inclui: [
-      "Conexão com Meta Ads + Google Ads",
-      "Quanto cada anúncio rendeu e custou",
-      "Comparação entre os canais de venda",
-      "Aviso quando um anúncio começa a render menos",
-      "+3-5 dias úteis no setup",
-    ],
+    prazo: "+3 a 5 dias úteis no setup",
   },
 ];
 
@@ -64,13 +39,13 @@ export function Pacotes() {
         <div className="max-w-3xl mb-12 md:mb-16">
           <p className="eyebrow mb-4">Pacotes</p>
           <h2 className="h-section text-balance">
-            <span className="italic font-display">Monte do seu jeito</span>.
-            As quatro peças, ou só as que fazem sentido.
+            <span className="italic font-display">Monte do seu jeito</span>. As
+            quatro peças, ou só as que fazem sentido.
           </h2>
           <p className="lead mt-6 text-pretty">
-            Você escolhe: a operação completa ou só as peças que precisa
-            agora, vitrine, agente no WhatsApp, painel ou rastreio de anúncios,
-            juntas ou separadas.
+            Você escolhe: a operação completa ou só as peças que precisa agora,
+            vitrine, agente no WhatsApp, painel ou rastreio de anúncios, juntas
+            ou separadas.
           </p>
         </div>
 
@@ -116,46 +91,36 @@ export function Pacotes() {
 
         {/* Peças individuais — niveladas */}
         <p className="eyebrow mb-6">Ou escolha apenas as peças que quiser</p>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {pecas.map((p) => (
             <article
               key={p.nome}
-              className="rounded-xl p-6 md:p-7 bg-bg border border-line shadow-soft hover:shadow-medium hover:border-accent/50 transition-all flex flex-col gap-4"
+              className="rounded-xl p-6 bg-bg border border-line shadow-soft hover:shadow-medium hover:border-accent/50 transition-all flex flex-col gap-4"
             >
               <header>
                 <h3 className="font-display text-xl md:text-2xl text-ink tracking-tightish mb-2">
                   {p.nome}
                 </h3>
-                <p className="text-sm text-ink-muted leading-relaxed">
+                <p className="text-sm text-ink-muted leading-relaxed text-pretty">
                   {p.resumo}
                 </p>
               </header>
 
-              <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-2 flex-1 pt-3 border-t border-line-soft">
-                {p.inclui.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <Check
-                      className="h-3.5 w-3.5 mt-1 shrink-0 text-accent-deep"
-                      strokeWidth={2.5}
-                    />
-                    <span className="text-xs text-ink-soft leading-relaxed">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href="#contato"
-                className="text-xs font-medium text-accent-deep hover:text-accent pt-3 border-t border-line-soft inline-flex items-center gap-1.5 transition-colors"
-              >
-                Falar sobre essa peça
-                <ArrowRight className="h-3 w-3" />
-              </a>
+              <div className="mt-auto pt-4 border-t border-line-soft">
+                <p className="text-[11px] text-ink-muted uppercase tracking-wider2 mb-3">
+                  {p.prazo}
+                </p>
+                <a
+                  href="#contato"
+                  className="text-xs font-medium text-accent-deep hover:text-accent inline-flex items-center gap-1.5 transition-colors"
+                >
+                  Falar sobre essa peça
+                  <ArrowRight className="h-3 w-3" />
+                </a>
+              </div>
             </article>
           ))}
         </div>
-
       </div>
     </section>
   );
