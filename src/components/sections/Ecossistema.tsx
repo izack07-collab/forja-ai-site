@@ -30,10 +30,8 @@ const pilares = [
     nome: "Agente IA no WhatsApp",
     desc: "Consultor virtual treinado com seu catálogo real e a sua voz de marca. Atende 24/7, encaminha para o checkout e ainda vai atrás de quem não fechou: recupera carrinho abandonado e faz follow-up sozinho.",
     features: [
-      "Busca peça no seu estoque real (não inventa preço nem disponibilidade)",
-      "Manda foto da peça sob demanda, direto do seu catálogo",
-      "Calcula o frete para a cidade da cliente em tempo real",
-      "Gera link de carrinho pré-preenchido (cliente só precisa pagar)",
+      "Consulta o produto no seu estoque real (não inventa preço nem disponibilidade)",
+      "Manda foto do produto sob demanda, direto do seu catálogo",
       "Recupera carrinho abandonado: vai atrás de quem encheu o carrinho e não pagou",
       "Faz follow-up sozinho: retoma quem ficou de pensar, na hora certa",
       "Entende áudio, foto e PDF, não só texto",
