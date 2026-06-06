@@ -104,7 +104,7 @@ export function Case() {
                   A loja roda quase no automático.
                 </span>{" "}
                 Quem opera a Ri Pratas cuida de separar o pedido, postar e do
-                administrativo. Mostrar a peça, tirar dúvida, calcular frete,
+                administrativo. Mostrar o produto, tirar dúvida, calcular frete,
                 receber o pagamento e rastrear de onde veio cada venda: o
                 ecossistema faz.
               </p>

@@ -63,7 +63,7 @@ const pilares = [
     icon: Target,
     eyebrow: "Pilar 4 · diferencial real",
     nome: "De onde veio cada venda + financeiro",
-    desc: "Você sabe qual anúncio do Meta ou Google trouxe cada venda. Acaba o 'acho que essa campanha tá vendendo'.",
+    desc: "Você sabe qual anúncio do Meta ou Google trouxe cada venda. Acaba o 'acho que essa campanha está vendendo'.",
     features: [
       "Conexão automática com Meta Ads (Facebook + Instagram) e Google Ads",
       "Cada venda mostra de qual anúncio ela veio",
@@ -150,28 +150,35 @@ export function Ecossistema() {
             </p>
           </div>
 
-          <BrowserFrame
-            src="/images/crm-dashboard.webp"
-            alt="Painel do CRM da Ri Pratas: receita, ticket médio, funil de conversão e top produtos"
-            url="painel.sualoja.com.br"
-            width={1280}
-            height={720}
-            className="max-w-4xl"
-          />
+          {/* No mobile, rola na horizontal pra o painel ficar legível */}
+          <div className="-mx-5 overflow-x-auto px-5 pb-2 sm:mx-0 sm:overflow-visible sm:px-0 sm:pb-0">
+            <BrowserFrame
+              src="/images/crm-dashboard.webp"
+              alt="Painel do CRM da Ri Pratas: receita, ticket médio, funil de conversão e top produtos"
+              url="painel.sualoja.com.br"
+              width={1280}
+              height={720}
+              className="min-w-[600px] max-w-4xl sm:min-w-0"
+            />
+          </div>
 
-          <div className="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-4xl mt-4 md:mt-6">
-            <BrowserFrame
-              src="/images/crm-campanhas.webp"
-              alt="Tela de campanhas: gasto, ROAS, CAC e sincronização com Meta Ads"
-              width={1280}
-              height={720}
-            />
-            <BrowserFrame
-              src="/images/crm-atribuicao.webp"
-              alt="Tela de atribuição: de qual anúncio veio cada venda e o retorno por canal"
-              width={1280}
-              height={720}
-            />
+          <div className="-mx-5 overflow-x-auto px-5 pb-2 mt-4 sm:mx-0 sm:overflow-visible sm:px-0 sm:pb-0 md:mt-6">
+            <div className="flex gap-4 sm:grid sm:grid-cols-2 md:gap-6 max-w-4xl">
+              <BrowserFrame
+                src="/images/crm-campanhas.webp"
+                alt="Tela de campanhas: gasto, ROAS, CAC e sincronização com Meta Ads"
+                width={1280}
+                height={720}
+                className="w-[300px] shrink-0 sm:w-auto"
+              />
+              <BrowserFrame
+                src="/images/crm-atribuicao.webp"
+                alt="Tela de atribuição: de qual anúncio veio cada venda e o retorno por canal"
+                width={1280}
+                height={720}
+                className="w-[300px] shrink-0 sm:w-auto"
+              />
+            </div>
           </div>
         </div>
 

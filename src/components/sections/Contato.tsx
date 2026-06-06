@@ -140,7 +140,7 @@ export function Contato() {
 
               <div className="space-y-2">
                 <Label htmlFor="conta">
-                  Conta um pouco da sua loja (opcional)
+                  Conte um pouco da sua loja (opcional)
                 </Label>
                 <Textarea
                   id="conta"
